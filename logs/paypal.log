@@ -1,0 +1,60 @@
+2020-08-27 09:24:18 | 300144001eg61b Error: ACK Failure: You do not have permissions to make this API call
+    at /home/louisbertson/Desktop/totalJS/eshop-master/node_modules/paypal-express-checkout/index.js:138:13
+    at IncomingMessage.<anonymous> (/home/louisbertson/Desktop/totalJS/eshop-master/node_modules/paypal-express-checkout/index.js:176:4)
+    at IncomingMessage.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+2020-08-27 09:26:55 | 300144001eg61b Error: ACK Failure: You do not have permissions to make this API call
+    at /home/louisbertson/Desktop/totalJS/eshop-master/node_modules/paypal-express-checkout/index.js:138:13
+    at IncomingMessage.<anonymous> (/home/louisbertson/Desktop/totalJS/eshop-master/node_modules/paypal-express-checkout/index.js:176:4)
+    at IncomingMessage.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+2020-08-27 09:29:01 | 300144001eg61b Error: ACK Failure: Security header is not valid
+    at /home/louisbertson/Desktop/totalJS/eshop-master/node_modules/paypal-express-checkout/index.js:138:13
+    at IncomingMessage.<anonymous> (/home/louisbertson/Desktop/totalJS/eshop-master/node_modules/paypal-express-checkout/index.js:176:4)
+    at IncomingMessage.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+2020-08-27 09:29:03 | 300144001eg61b Error: ACK Failure: Security header is not valid
+    at /home/louisbertson/Desktop/totalJS/eshop-master/node_modules/paypal-express-checkout/index.js:138:13
+    at IncomingMessage.<anonymous> (/home/louisbertson/Desktop/totalJS/eshop-master/node_modules/paypal-express-checkout/index.js:176:4)
+    at IncomingMessage.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+2020-08-27 09:30:35 | 300144001eg61b Error: ACK Failure: Security header is not valid
+    at /home/louisbertson/Desktop/totalJS/eshop-master/node_modules/paypal-express-checkout/index.js:138:13
+    at IncomingMessage.<anonymous> (/home/louisbertson/Desktop/totalJS/eshop-master/node_modules/paypal-express-checkout/index.js:176:4)
+    at IncomingMessage.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+2020-08-27 09:30:37 | 300144001eg61b Error: ACK Failure: Security header is not valid
+    at /home/louisbertson/Desktop/totalJS/eshop-master/node_modules/paypal-express-checkout/index.js:138:13
+    at IncomingMessage.<anonymous> (/home/louisbertson/Desktop/totalJS/eshop-master/node_modules/paypal-express-checkout/index.js:176:4)
+    at IncomingMessage.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+2020-08-27 09:31:25 | 300144001eg61b Error: ACK Failure: Security header is not valid
+    at /home/louisbertson/Desktop/totalJS/eshop-master/node_modules/paypal-express-checkout/index.js:138:13
+    at IncomingMessage.<anonymous> (/home/louisbertson/Desktop/totalJS/eshop-master/node_modules/paypal-express-checkout/index.js:176:4)
+    at IncomingMessage.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+2020-09-25 22:40:37 | 342699001gu61b Error: ACK Failure: Security header is not valid
+    at /home/louisbertson/Desktop/bureau/totalJS/eshop-master/node_modules/paypal-express-checkout/index.js:138:13
+    at IncomingMessage.<anonymous> (/home/louisbertson/Desktop/bureau/totalJS/eshop-master/node_modules/paypal-express-checkout/index.js:176:4)
+    at IncomingMessage.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+2020-12-23 17:07:21 | 470525001xf61b { Error: getaddrinfo EAI_AGAIN api-3t.paypal.com api-3t.paypal.com:443
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:56:26)
+  errno: 'EAI_AGAIN',
+  code: 'EAI_AGAIN',
+  syscall: 'getaddrinfo',
+  hostname: 'api-3t.paypal.com',
+  host: 'api-3t.paypal.com',
+  port: 443 }
+2020-07-05 12:59:43 | 224039001nm61b { Error: certificate is not yet valid
+    at TLSSocket.onConnectSecure (_tls_wrap.js:1088:34)
+    at TLSSocket.emit (events.js:198:13)
+    at TLSSocket._finishInit (_tls_wrap.js:666:8) code: 'CERT_NOT_YET_VALID' }

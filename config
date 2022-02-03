@@ -1,0 +1,17 @@
+name                      : AGRAVI BURKINA
+version                   : 1.0.0
+author                    : Juldo Devs
+
+// Hidden super admin in the form username:password
+admin-superadmin          : spass:spass123456
+admin-cookie              : __admin
+
+// Enables real-time visitor tracking
+admin-tracking            : true
+
+// Image convertor for resizing of pictures
+// Default image converter: im = ImageMagick, gm = GraphicsMagick
+default_image_converter   : im
+
+// Default theme
+default_theme             : default
