@@ -1,5 +1,5 @@
 {
-  "pid": 15736,
+  "pid": 3564,
   "stats": [
     {
       "id": null,
@@ -8,18 +8,18 @@
         "total": "3.4.5",
         "app": "1.0.0"
       },
-      "pid": 15736,
+      "pid": 3564,
       "thread": "",
       "mode": "debug",
-      "date": "2022-02-03T08:30:15.984Z",
-      "memory": 10.76,
-      "rm": 2.68,
-      "fm": 0.69,
-      "usage": 24,
-      "requests": 2135,
+      "date": "2022-02-03T22:59:25.156Z",
+      "memory": 9.72,
+      "rm": 19.33,
+      "fm": 1.4,
+      "usage": 26,
+      "requests": 3113,
       "pending": 0,
-      "errors": 7,
-      "timeouts": 2
+      "errors": 11,
+      "timeouts": 0
     }
   ]
 }
