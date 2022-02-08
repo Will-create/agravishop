@@ -1,0 +1,25 @@
+{
+  "pid": 40291,
+  "stats": [
+    {
+      "id": null,
+      "version": {
+        "node": "v14.19.0",
+        "total": "3.4.5",
+        "app": "1.0.0"
+      },
+      "pid": 40291,
+      "thread": "",
+      "mode": "release",
+      "date": "2022-02-08T00:38:56.412Z",
+      "memory": 18.39,
+      "rm": 2.3,
+      "fm": 0.34,
+      "usage": 0,
+      "requests": 3348,
+      "pending": 2,
+      "errors": 10,
+      "timeouts": 0
+    }
+  ]
+}
