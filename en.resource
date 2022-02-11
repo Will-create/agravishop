@@ -2,40 +2,40 @@
 // Created by Louis Bertson: 2022-02-09 21:17
 
 // sitemap
-T81yvn8                     : Acceuil
-T18fya                      : Blog
-Tnsze2m                     : /blog/
+T81yvn8                     : Home
+T18fya                      : News
+Tnsze2m                     : /news/
 T1hg3k                      : Post
-T4qjtwl                     : /blog/{0}/
-T1808v                      : Avis
-Tnslv6p                     : /avis/
+T4qjtwl                     : /news/{0}/
+T1808v                      : Notices
+Tnslv6p                     : /notices/
 T11ksof                     : Admin
 T1l9sswr                    : /admin/*
-T1gfu1df                    : Soumission de la commande
-T17hkjby                    : /soumission-de-la-commande/
+T1gfu1df                    : Check
+T17hkjby                    : /-de-la-commande/
 T1qvjxd2                    : /categories/*
-T17r5up7                    : Details produit
+T17r5up7                    : Product details
 T1tp7mvq                    : /detail/{0}/
-T10smza7                    : Produits TOP
+T10smza7                    : Top products
 Tryre1                      : /top/
-Ti4zfo3                     : Nouveau produits
-T16l224n                    : /nouveau/
-Tjhcyau                     : Produits populaires
-T1pf1xx7                    : /populaire/
-Tydz53o                     : Mon Compte
-T1cc7328                    : /Compte/
-T1pfht4r                    : Details commandes
-T1qn8r2d                    : /soumission-de-la-commande/{0}/
-T8hfi3n                     : Parametres de compte
-Tjo9lbf                     : /compte/parametres/
-T1ke2hjc                    : Deconnexion
-Tporp12                     : /deconnexion/
+Ti4zfo3                     : New products
+T16l224n                    : /new/
+Tjhcyau                     : Popular product
+T1pf1xx7                    : /popular/
+Tydz53o                     : My account
+T1cc7328                    : /account/
+T1pfht4r                    : Order details
+T1qn8r2d                    : /submission-of-order/{0}/
+T8hfi3n                     : Account parameters
+Tjo9lbf                     : /accounts/parameter/
+T1ke2hjc                    : logout
+Tporp12                     : /logout/
 
 // sitemap, themes/default/views/layout.html
-T19trtyv                    : Tous les produits
+T19trtyv                    : All product
 
 // controllers/api.js
-T18hq4n1                    : Vous avez été désabonné avec succès.\nThank you
+T18hq4n1                    : You have been subscribed successfully.\nThank you
 
 // models/contacts.js
 T18x43b5                    : Contact form #{0}
@@ -57,8 +57,8 @@ error-posts-404             : error-posts-404
 error-data                  : error-data
 
 // models/users.js
-Ti5zbsv                     : Recuperation de mot de passe
-Ttgydtq                     : Creation de Compte
+Ti5zbsv                     : Password recovery
+Ttgydtq                     : Create account
 error-password-check        : error-password-check
 error-users-credentials     : error-users-credentials
 error-users-blocked         : error-users-blocked
@@ -79,35 +79,35 @@ Tay69xz                     : ', index
 // themes/admin/views/index.html
 T14neioh                    : Admin v@{config.version}
 Trdqf3p                     : SUN,MON,TU,WED,THU,FRI,SUN
-T1e19vgu                    : Janvier,Février,Mars,Avril,Mai,Juin,Juillet,Août,Septembre,Octobre,Novembre,Décembre
-Th9mw9x                     : Régler la date à aujourd'hui
+T1e19vgu                    : January,February,March,April,May,June,July,August,September,October,November,December
+Th9mw9x                     : Set date to today
 T1fblr                      : Menu
-Twjfjol                     : Tableau de Board
-T8ct3x5                     : Commandes
-T1jhzmyy                    : Produits
-T13mqtf2                    : Postes
+Twjfjol                     : Dashboard
+T8ct3x5                     : Orders
+T1jhzmyy                    : Products
+T13mqtf2                    : Posts
 T19ro2s                     : Pages
-Tdl174y                     : Composantes
-T1lkhisw                    : Utilisateurs
+Tdl174y                     : Components
+T1lkhisw                    : Users
 Tolymd6                     : Newsletters
-T1n0vqp9                    : 'Il y\'a' + '  '+ seconds + ' ' + Tangular.helpers.pluralize(seconds >> 0, 'secondes', 'seconde', 'secondes', 'secondes')
+T1n0vqp9                    : seconds + ' ' + Tangular.helpers.pluralize(seconds >> 0, 'seconds', 'second', 'seconds', 'seconds') + ' ago'
 T2cba                       : now
-Tpsa92l                     : 'Il y\'a' + '  '+ minutes + ' minutes'
-T1f080k3                    : 'Il y\'a' + '  '+ hours + ' ' + Tangular.helpers.pluralize(hours, 'heures', 'heure', 'houres', 'houres')
-Txquf6o                     : 'Il y\'a' + '  '+ days + ' ' + Tangular.helpers.pluralize(days, 'jours', 'jours', 'jours', 'jours')
-T1sr0nns                    : 'Il y\'a' + '  '+ months + ' ' + Tangular.helpers.pluralize(months, 'mois', 'mois', 'mois', 'mois')
-Tl1z0kf                     : 'Il y\'a' + '  '+ years + ' ' + Tangular.helpers.pluralize(years, 'années', 'année', 'années', 'années')
-T7hy35n                     : Produit ajouté
-T1oobrzk                    : Navigation ajouté
-Te7xa4n                     : Catégorie remplacée
-Tkgdtxv                     : Fabricant supprimé
-Tpfttq5                     : Importation terminée
-T1tpbrc5                    : Importés: {0}x produits
-T11cbgq8                    : Nesletter envoyé
-T1cvbass                    : Envoie de la newsletter en cours
-T158eb6d                    : Envoyé: {0}%
-Tl3qib0                     : Newsletter envoyée
-Taiwb9b                     : Subscriber is saved
+Tpsa92l                     : minutes + ' minutes ago'
+T1f080k3                    : hours + ' ' + Tangular.helpers.pluralize(hours, 'hours', 'hour', 'hours', 'hours') + ' ago'
+Txquf6o                     : days + ' ' + Tangular.helpers.pluralize(days, 'days', 'day', 'days', 'days') + ' ago'
+T1sr0nns                    : months + ' ' + Tangular.helpers.pluralize(months, 'months', 'month', 'months', 'months') + ' ago'
+Tl1z0kf                     : years + ' ' + Tangular.helpers.pluralize(years, 'years', 'year', 'years', 'years') + ' ago'
+T7hy35n                     : Product has been saved
+T1oobrzk                    : Navigation has been saved
+Te7xa4n                     : Category has been replaced
+Tkgdtxv                     : Manufacturer has been replaced
+Tpfttq5                     : Importing has been finished
+T1tpbrc5                    : Imported: {0}x products
+T11cbgq8                    : Newsletter has been saved
+T1cvbass                    : Sending of newsletter
+T158eb6d                    : Sent: {0}%
+Tl3qib0                     : Newsletter has been sent
+Taiwb9b                     : Subscriber has been saved
 Tfqlve2                     : Unsubscribed
 T17jtnn2                    : Useless files are deleted
 T303ctf                     : Number of files : {0}x
@@ -163,39 +163,39 @@ T5xvxpm                     : Show all products
 T2zzo3k                     : Categories
 
 // themes/default/views/layout.html
-T1nbpvsy                    : RECOMMANDÉS
-Tvx5eix                     : Nouveaux Produits
-T12p2fe5                    : Produits TOP à la mode
-Tmwah2b                     : Populaire
-T1qrmqqf                    : Nouveau
+T1nbpvsy                    : We recommend
+Tvx5eix                     : New goods
+T12p2fe5                    : Top products
+Tmwah2b                     : Popular
+T1qrmqqf                    : New
 
 // themes/default/views/layout.html, themes/default/views/eshop/checkout.html
-Tg22a17                     : Votre panier
+Tg22a17                     : Your cart
 
 // themes/default/views/notices.html, themes/default/views/posts.html, themes/admin/public/forms/filebrowser.html, themes/admin/public/forms/notices.html, themes/admin/public/forms/posts.html, themes/admin/public/templates/posts.html, themes/default/views/cms/product.html, themes/default/views/mails/contact.html, themes/default/views/mails/order.html
 T1wdzhts                    : yyyy-MM-dd
 
 // themes/default/views/notices.html
-T17sc3tl                    : Lire le blog
-T1cyekf                     : Parcourrir les Produits
-T1usnhut                    : Aucune notice en base de donnée.
+T17sc3tl                    : Read the news
+T1cyekf                     : Browse the products
+T1usnhut                    : No notice.
 
 // themes/default/views/posts.html
-T1p6nnze                    : Lire plus
-T3e38w8                     : Nos produits en base de donnée.
+T1p6nnze                    : Read more
+T3e38w8                     : Aucun produits en pase de  données.
 
 // themes/admin/public/components/cmseditor.html
-T1tgnlbl                    : Appareil large
-T18dlgg                     : Moyen
-T1lai3cn                    : Tablette
-T19unz8m                    : Mise en page:
-T1br0d                      : Gras
-Thkplji                     : italique
-Tmm4az                      : sousligner
-T1z6xy                      : lien
-T1nmpn5                     : icône
-T1ycwox4                    : Afficher code source
-T1i321kc                    : Erreur de chargement:
+T1tgnlbl                    : Wide screens
+T18dlgg                     : Medium
+T1lai3cn                    : Tablet
+T19unz8m                    : Formatting:
+T1br0d                      : Bold
+Thkplji                     : italic
+Tmm4az                      : Underline
+T1z6xy                      : Link
+T1nmpn5                     : Icon
+T1ycwox4                    : Display source code
+T1i321kc                    : Upload error :
 Tfxcx31                     : <b>WITHOUT CONTENT</b><br />Choose the template for content editing.
 Tpth24x                     : Upload error:
 T1jd8uaj                    : Widget doesn\'t contain any settings.
@@ -219,804 +219,266 @@ T1c7du                      : Hide
 T127avgi                    : Mobile
 
 // themes/admin/public/forms/cmseditor-attribute.html
-Txtxast                     : Modifier l'attribut
-Tb4glus                     : Nom des classes
-T1xridpn                    : ID de l'élement
-Tv225l0                     : Générer l'id a partir du contenu
-T1c5z70                     : Thème
-T14w8d3u                    : Styles personnalisés
-T60gtmi                     : paramètres de l'image
-T1u3d39g                    : Alterner le  texte
-Tqqains                     : Largeur
-T133p4cq                    : Hauteur
+Txtxast                     : Modify attributes
+Tb4glus                     : Class names
+T1xridpn                    : Element ID
+Tv225l0                     : Generate from content
+T1c5z70                     : Theme
+T14w8d3u                    : Custom style
+T60gtmi                     : Image parameters
+T1u3d39g                    : Alternate the text
+Tqqains                     : Width
+T133p4cq                    : Height
 Tid45sx                     : Poucentage
 T18x34to                    : URL Source
-T1wta3t1                    : ANNULER
+T1wta3t1                    : CANCEL
 
 // themes/admin/public/forms/cmseditor-attribute.html, themes/admin/public/forms/cmseditor-link.html, themes/admin/public/forms/pages-navigation-item.html
 T8obi03                     : Tooltip
 
 // themes/admin/public/forms/cmseditor-attribute.html, themes/admin/public/forms/cmseditor-link.html, themes/admin/public/forms/notices.html, themes/admin/public/forms/pages-globals.html, themes/admin/public/forms/pages-navigation-item.html, themes/admin/public/forms/widgets-globals.html, themes/admin/public/forms/widgets.html
-T1erqqhe                    : Parcourir fichiers
+T1erqqhe                    : Browse files
 
 // themes/admin/public/forms/cmseditor-attribute.html, themes/admin/public/forms/cmseditor-link.html, themes/admin/public/forms/cmseditor-picture.html, themes/admin/public/forms/cmseditor-settings.html, themes/admin/public/forms/cmseditor-sourcecode.html, themes/admin/public/forms/pages-navigation-item.html, themes/admin/public/forms/pages-navigation.html, themes/admin/public/forms/products-replace.html
-Tbizrwv                     : APPLIQUER
+Tbizrwv                     : APPLY
 
 // themes/admin/public/forms/cmseditor-icons.html
-T1y9b2dp                    : Modifier l'icône
-T1a9r3pa                    : Rechercher des icones
+T1y9b2dp                    : Change icone
+T1a9r3pa                    : Search icones
 
 // themes/admin/public/forms/cmseditor-link.html
-Trgxh50                     : Modifier le lien
-T152p3au                    : Sélectionner l'URL en fonction du sitemap
-T1yteme5                    : Onglet ou fenêtre courant
-T1pcnzk8                    : Nouvel Onglet ou fenêtre
-T12rcph                     : Cible
-T1xpgptj                    : Appliquer tous les liens au contenaire parent
+Trgxh50                     : Change link
+T152p3au                    : Select URL according to sitemap
+T1yteme5                    : new tab or current tab
+T1pcnzk8                    : New tab or window
+T12rcph                     : Target
+T1xpgptj                    : Apply all links to parent content
 
 // themes/admin/public/forms/cmseditor-link.html, themes/admin/public/forms/cmseditor-picture.html, themes/admin/public/forms/pages-navigation-item.html, themes/admin/public/forms/pages.html, themes/admin/public/templates/pages.html, themes/admin/public/templates/settings.html
-T1k59fzy                    : Adresse URL
+T1k59fzy                    : URL address
 
 // themes/admin/public/forms/cmseditor-link.html, themes/admin/public/forms/newsletters.html, themes/admin/public/forms/users.html, themes/admin/public/templates/users.html, themes/default/public/widgets/contactform.html
 T13xh18                     : Email
 
 // themes/admin/public/forms/cmseditor-link.html, themes/admin/public/forms/orders.html, themes/admin/public/forms/users.html, themes/admin/public/templates/users.html, themes/default/public/widgets/contactform.html, themes/default/views/eshop/account.html, themes/default/views/eshop/checkout.html, themes/default/views/eshop/order.html, themes/default/views/eshop/settings.html, themes/default/views/eshop/signin.html, themes/default/views/mails/contact.html, themes/default/views/mails/order.html
-T6ikd0c                     : Téléphone
+T6ikd0c                     : Phone
 
 // themes/admin/public/forms/cmseditor-picture.html
-T1y9ef2v                    : Modifier l'image
-T1xutm4s                    : Alterner le texte
-T1scvtta                    : URL en fonction du sitemap
+T1y9ef2v                    : Change image
+T1xutm4s                    : Alternate  text
+T1scvtta                    : URL according to sitemap
 
 // themes/admin/public/forms/cmseditor-settings.html
-Tuef4v1                     : Paramètres Widget
+Tuef4v1                     : Widget parameters
 
 // themes/admin/public/forms/cmseditor-sourcecode.html
-T1elt4p1                    : Modifier Code Source
+T1elt4p1                    : Edit source code
 T1br8r                      : HTML
 
 // themes/admin/public/forms/cmseditor-widgets.html
 T1dp3dzj                    : Widgets
-Twbwjq                      : Rechercher widgets
+Twbwjq                      : Search widgets
 
 // themes/admin/public/forms/filebrowser.html
-Tx9mw81                     : Explorateur de fichiers
-T1f021wl                    : Nouveau fichier
-Tuhu0se                     : Effacer les fichiers inutiles
-T21kzz                      : page
-T5o93ex                     : Vous devez choisir une image.
-T1s57pi1                    : Etes vous sure de vouloir supprimer les images inutiles?
-T12l7ce                     : Netoyage des fichiers inutiles a commencé.
+Tx9mw81                     : File browser
+T1f021wl                    : New file
+Tuhu0se                     : Clean useless files
+T21kzz                      : Page
+T5o93ex                     : Choose an image.
+T1s57pi1                    : Are you sure you want toclean useless files?
+T12l7ce                     : Useless files clean up has starded.
 
 // themes/admin/public/forms/filebrowser.html, themes/admin/public/templates/newsletters.html, themes/admin/public/templates/notices.html, themes/admin/public/templates/orders.html, themes/admin/public/templates/pages.html, themes/admin/public/templates/posts.html, themes/admin/public/templates/products.html, themes/admin/public/templates/settings.html, themes/admin/public/templates/subscribers.html, themes/admin/public/templates/users.html, themes/admin/public/templates/widgets.html
-Twut18h                     : Supprimer
+Twut18h                     : Delete
 
 // themes/admin/public/forms/filebrowser.html, themes/admin/public/forms/newsletters.html, themes/admin/public/templates/newsletters.html, themes/admin/public/templates/notices.html, themes/admin/public/templates/orders.html, themes/admin/public/templates/pages.html, themes/admin/public/templates/posts.html, themes/admin/public/templates/products.html, themes/admin/public/templates/settings.html, themes/admin/public/templates/subscribers.html, themes/admin/public/templates/users.html, themes/admin/public/templates/widgets.html
-T1okt                       : Non
+T1okt                       : No
 
 // themes/admin/public/forms/newsletters.html, themes/admin/public/forms/notices.html, themes/admin/public/forms/orders.html, themes/admin/public/forms/pages-navigation-item.html, themes/admin/public/forms/pages.html, themes/admin/public/forms/posts.html, themes/admin/public/forms/products.html, themes/admin/public/forms/widgets.html, themes/admin/public/templates/newsletters.html, themes/admin/public/templates/notices.html, themes/admin/public/templates/pages.html, themes/admin/public/templates/posts.html, themes/admin/public/templates/products.html, themes/admin/public/templates/users.html, themes/admin/public/templates/widgets.html, themes/default/public/widgets/contactform.html, themes/default/views/eshop/checkout.html, themes/default/views/eshop/settings.html
-T1oks                       : Nom
+T1oks                       : Name
 
 // themes/admin/public/forms/newsletters.html, themes/admin/public/forms/pages.html, themes/admin/public/forms/posts.html, themes/admin/public/forms/products.html
 T18d5vt                     : Model
-T1q38lid                    : Statistiques
+T1q38lid                    : Statistics
 
 // themes/admin/public/forms/newsletters.html
-Tgte83h                     : Cocher ici si vous voulez envoyer le mail a tous les abonnés.
-T1s031j9                    : Envoyer  a tous!
-T19aen                      : Créé
-T1btnom7                    : Modifié
-T15dfd27                    : Tester
-T1km1z6s                    : ENVOYER
+Tgte83h                     : Check here if you want to send email to all subscribers.
+T1s031j9                    : Send to every one!
+T19aen                      : Created
+T1btnom7                    : Modified
+T15dfd27                    : Test
+T1km1z6s                    : SEND
 T11yzkin                    : Edit newslettter
 Tjwpfjp                     : New newslettter
-Tepba91                     : La news letter a été enregistré avec succès.
-Tbxmjrl                     : Etes vous sûre de vouloir envoyer cette newsletter a tous?
-T7g20fh                     : Oui, Envoyer
-Tf4uazw                     : La newsletter a été envoyé avec sccès.
+Tepba91                     : Newsletter is sent succesfully.
+Tbxmjrl                     : Are you sure want to sent this newsletter to all?
+T7g20fh                     : Yes, send
+Tf4uazw                     : Newsletter is sent successfully.
 
 // themes/admin/public/forms/newsletters.html, themes/admin/public/forms/pages.html, themes/admin/public/forms/posts.html, themes/admin/public/forms/products.html, themes/admin/public/forms/widgets.html
-T1iirk5c                    : Restaurer une sauvegarde
+T1iirk5c                    : Restore from backup
 
 // themes/admin/public/forms/newsletters.html, themes/admin/public/forms/pages.html, themes/admin/public/forms/posts.html, themes/admin/public/forms/products.html, themes/admin/public/forms/users.html
 Tn23c                       : # Id
 
 // themes/admin/public/forms/newsletters.html, themes/admin/public/forms/products.html
-T1qdi3ho                    : non modifié
+T1qdi3ho                    : not modified
 
 // themes/admin/public/forms/newsletters.html, themes/admin/public/forms/notices.html, themes/admin/public/forms/orders.html, themes/admin/public/forms/pages-globals.html, themes/admin/public/forms/pages.html, themes/admin/public/forms/posts.html, themes/admin/public/forms/products.html, themes/admin/public/forms/settings-admin.html, themes/admin/public/forms/users.html, themes/admin/public/forms/widgets-globals.html, themes/admin/public/forms/widgets.html
-Tc8ik4v                     : SAUVEGARDER
+Tc8ik4v                     : SAVE
 
 // themes/admin/public/forms/newsletters.html, themes/admin/public/forms/orders.html, themes/admin/public/forms/pages.html, themes/admin/public/forms/posts.html, themes/admin/public/forms/products.html, themes/admin/public/forms/widgets.html, themes/admin/public/templates/subscribers.html, themes/default/views/eshop/account.html, themes/default/views/eshop/order.html, themes/default/views/eshop/settings.html
 T1fnasze                    : yyyy-MM-dd HH:mm
 
 // themes/admin/public/forms/notices.html, themes/admin/public/forms/posts.html, themes/admin/public/forms/widgets.html
-Ty90uon                     : Editer
+Ty90uon                     : Edit
 
 // themes/admin/public/forms/notices.html
-Tkw7wjf                     : Code pin pour cette notice
-T1xvxge5                    : Vous pouvez programmer la date de la publication.
-T2kifzw                     : Choisir une catégorie
-T12gw9dq                    : Specifier un nom d'auteur
-T12dy0lo                    : Evènement
-Tblaumh                     : Vous pouvez programmer la date de l'évènement.
-T1vc5nq0                    : Editeur
-T12vill                     : Corps
-T18tlwto                    : Vous pouvez saisir le corps en format markdown.
-T7lbznv                     : Saisir une adresse URL
-T1g8kk02                    : Vous pouvez spécifier l'adresse url de la cible.
-T1y21urf                    : Choisir une icône pour cette notice.
+Tkw7wjf                     : Pin this notice
+T1xvxge5                    : You can schedule publication date.
+T2kifzw                     : Choose category
+T12gw9dq                    : Specify author name
+T12dy0lo                    : Event
+Tblaumh                     : You can specify the event date.
+T1vc5nq0                    : Editor
+T12vill                     : Body
+T18tlwto                    : You can edit body in markdown.
+T7lbznv                     : Type url adress
+T1g8kk02                    : You can specify the url adress of the target.
+T1y21urf                    : Choose an icon for this notice.
 T1li1y8e                    : Edit notice
 T15kva7s                    : New notice
-T1xa5mvw                    : La notice a été enrégistré avec succès.
+T1xa5mvw                    : Notice has been saved successfully.
 
 // themes/admin/public/forms/notices.html, themes/admin/public/forms/posts.html
 T19hvy                      : Date
 
 // themes/admin/public/forms/notices.html, themes/admin/public/forms/posts.html, themes/admin/public/forms/products.html
-T1ei7ifn                    : Catégorie
+T1ei7ifn                    : Category
 
 // themes/admin/public/forms/notices.html, themes/admin/public/forms/posts.html, themes/admin/public/templates/notices.html, themes/admin/public/templates/posts.html
-Twmdlb6                     : Auteur
+Twmdlb6                     : Author
 
 // themes/admin/public/forms/notices.html, themes/admin/public/forms/pages.html, themes/admin/public/forms/widgets.html, themes/default/views/eshop/account.html
-T1hmr1ji                    : Voir rendu
+T1hmr1ji                    : Preview
 
 // themes/admin/public/forms/notices.html, themes/admin/public/forms/pages-navigation-item.html
-T1hmpnw4                    : Rechercher une icône
+T1hmpnw4                    : Search icon
 
-// themes/admin/public/forms/orders.html
-T1sr                        : ID
-T1vpisbx                    : Date création
-Tqvsdym                     : Date modification
-Tyer0b6                     : Envoyé
-Twifiz5                     : Annulé
-Typb6rr                     : Statut Commande
-T1tds3fp                    : Note Interne
-T8uaewz                     : Traité et fermé
-T1hyo3zr                    : Envoyer un mail au client a propos du statut de la commande
-T19we7h7                    : numéro personnalisé
-Tc459fu                     : Rémise %
-T1nl5ap2                    : Information seulement
-T7w0v3n                     : Un message personnalisé pour le client
-T4fa0at                     : Information du Contact
-T17sbgkr                    : Adresse Email
-Tclahxe                     : Entreprise de factorisation
-Tp6rzbz                     : Numéro TVA
-T1fxf0ko                    : Adresse de livraison et adresse de facturation sont les mêmes
-T1bxwc8t                    : Ville, Quartier
-T176daig                    : IMPORTANT:
-T1y82lqt                    : La quantité de produits en stock n'affecte pas la quantité de produits commandés"
-T1euji8r                    : Quantité
-Tf4wqzd                     : Résumer:
-Tzlurrw                     : Modifier la commande
-Tz127ug                     : Nouvelle commande
-Tep23cu                     : La commande a été enrégistré avec succès.
-T8ua9sp                     : Entrer un nom de produit
-T7i2wrv                     : Produits envoyés
-
-// themes/admin/public/forms/orders.html, themes/admin/public/templates/orders.html, themes/default/views/eshop/order.html
-T12rwxc0                    : Numéro
-T1h5y9                      : Payé
-
-// themes/admin/public/forms/orders.html, themes/admin/public/forms/products.html, themes/admin/public/templates/orders.html, themes/default/views/cms/product.html, themes/default/views/eshop/order.html
-T1hi35                      : Prix
-
-// themes/admin/public/forms/orders.html, themes/default/views/eshop/order.html
-T1pp8cyn                    : Produits commandés
-T10xr15a                    : Code de suivi
-T1ge1o2r                    : Adresse de livraison
-
-// themes/admin/public/forms/orders.html, themes/admin/public/forms/users.html, themes/admin/public/templates/dashboard.html, themes/default/views/eshop/order.html
-T1pdvkgo                    : Adresse IP
-
-// themes/admin/public/forms/orders.html, themes/admin/public/templates/orders.html, themes/default/views/eshop/account.html, themes/default/views/eshop/order.html
-T3zj2vs                     : Terminé
-
-// themes/admin/public/forms/orders.html, themes/default/views/eshop/checkout.html, themes/default/views/eshop/order.html, themes/default/views/mails/order.html
-T1k0c4q9                    : Livraison
-
-// themes/admin/public/forms/orders.html, themes/default/views/eshop/checkout.html, themes/default/views/eshop/order.html
-Tg8pubv                     : Paiement
-T1qa9x2z                    : Entreprise
-
-// themes/admin/public/forms/orders.html, themes/admin/public/forms/users.html, themes/default/views/eshop/signin.html
-T1j6q79f                    : Nom de famille
-
-// themes/admin/public/forms/orders.html, themes/admin/public/forms/users.html, themes/default/public/widgets/contactform.html, themes/default/views/eshop/checkout.html, themes/default/views/eshop/settings.html, themes/default/views/eshop/signin.html
-T13qhffp                    : Prénom
-
-// themes/admin/public/forms/orders.html, themes/default/views/eshop/checkout.html
-T5rqwg0                     : ID entreprise
-T1roi                       : Rue
-T1wjl                       : ZIP
-T1h5uz                      : Pays
-
-// themes/admin/public/forms/orders.html, themes/default/views/cms/product.html
-T1dakeg3                    : Référence
-
-// themes/admin/public/forms/orders.html, themes/admin/public/forms/products.html
-T1ul181z                    : Ajouter un nouveau produit
-
-// themes/admin/public/forms/pages-globals.html
-Tcpjw09                     : Editer les variables globales
-Tqw2cc8                     : Les variables globales peuvent contenir des valeurs prédéfinies pour le contenu de la page. En d'autres termes: Vous pouvez définir des clés avec le contenu et les utiliser dans les différentes pages.
-Tbxpn5r                     : Le système remplace <code>$clé</code> par une valeur dans toutes les pages où elles sont rendues.
-T1tlep                      : cléA
-T1lemkg1                    : valeur
-T1tleq                      : cléB
-T1jzibfi                    : Les Globals ont été enrégistrés avec succès.
-
-// themes/admin/public/forms/pages-globals.html, themes/admin/public/templates/pages.html
-T1tqtjy2                    : Variables globales
-
-// themes/admin/public/forms/pages-navigation-item.html, themes/admin/public/forms/pages-navigation.html, themes/admin/public/templates/pages.html
-T1rrua7o                    : Navigation
-
-// themes/admin/public/forms/pages-navigation-item.html
-Tffbo7k                     : URL according to the sitemap
-T1ow6t8k                    : CMS synchronisera toutes les informations automatiquement en fonction des paramètres de la page.
-T1236bha                    : L'onglet ou la fenêtre courante
-T1i76b3z                    : Un nouvel onglet ou une nouvelle fenêtre
-T15b7a29                    : Target
-T7nknmm                     : Par défaut
-Tfxbomq                     : Mise en exergue
-T1cy4u                      : Info
-T1xbx7ik                    : Avertissement
-T1vcztb1                    : Spécial
-T1o4usdd                    : Comportement
-
-// themes/admin/public/forms/pages-navigation.html
-Ttv5op                      : Ajouter Nouveau
-T1h5ixle                    : Tout éffacer
-Tm50qfl                     : Aucun Produit
-Tqateag                     : Edit navigation: {0}
-
-// themes/admin/public/forms/pages.html, themes/admin/public/forms/products.html
-T828rkk                     : Accueil
-
-// themes/admin/public/forms/pages.html
-T104vfj6                    : Ceci est un contenu partiel
-Txf7f9f                     : URL relatif de la page
-T13f0r7u                    : Parent
-T1rfty7i                    : Cela affecte le sitemap et la structure.
-T1aztann                    : Enregistrer le contenu
-T1c48aa                     : Titre
-T1gilzeh                    : Titre meta, maximum 60 caractères.
-Tr45djm                     : Mots clés
-Txmg1ek                     : Mots clés meta, maximum 6 mots.
-Tghw3xm                     : Description meta, maximum 120 caractères.
-Tngg4zn                     : Signaux sont susceptibles de déclancher des actions spéciales lors du chargement de la page.
-Toix2ax                     : Ne contient aucune page partielle.
-T14d05aw                    : Les pages partielles nichées.
-T1a0qann                    : Joindre d'autres pages partielles à celle-là.
-Tp1uw7u                     : Ne contient aucune navigation.
-T1mqih4f                    : Sidebar de navigation
-T2epym9                     : Ajouter une sidebar de navigation.
-T1vdsjim                    : Paramètres pour les navigations
-T20nrfe                     : Remplacer l'icône dans toutes les navigations
-Tm16msf                     : Remplacer le nom dans toutes les navigations
-T17mzk7o                    : Remplacer l'ancienne adresse URL dans tout le contenu
-T1yr678a                    : Choisir une icône
-Twromb                      : Modifier  la Page
-T1xa8f3h                    : Nouvelle Page
-Tnal5dj                     : La Page a été enregistré avec succès.
-
-// themes/admin/public/forms/pages.html, themes/admin/public/forms/posts.html, themes/default/views/cms/product.html
-T1y3d9ek                    : Description
-
-// themes/admin/public/forms/pages.html, themes/admin/public/forms/posts.html, themes/admin/public/forms/products.html
-T1ku88jv                    : Ne contient aucun signal.
-T1q2e2tj                    : Signaux
-T5b3zot                     : Date_modification
-
-// themes/admin/public/forms/pages.html, themes/admin/public/forms/widgets.html
-T1ac40yh                    : Rechercher des icônes
-
-// themes/admin/public/forms/pages.html, themes/admin/public/forms/posts.html, themes/admin/public/forms/products.html, themes/admin/public/forms/users.html, themes/admin/public/templates/newsletters.html
-Tvbetyk                     : Date_création
-
-// themes/admin/public/forms/pages.html, themes/admin/public/forms/posts.html
-Tixe970                     : Non modifié
-
-// themes/admin/public/forms/posts.html
-T4nw305                     : C'est déja publié
-Tzsvxn                      : Vous pouvez spécifier la date de publication ici.
-T1kazr1n                    : Les signaux peuvent déclencher des actions spéciales lors du chargement de la page.
-Trgfqam                     : Modifier le Post
-T1e8b0ix                    : Nouveau Post
-T50oaww                     : Le Post a été enrégistré avec succès.
-
-// themes/admin/public/forms/products-replace.html
-T1io2xc5                    : Remplacer
-T1nf6csm                    : Choisir l'ancien nom
-Txp6adf                     : Nouveau nom
-T1c77gml                    : Catégorie remplacée avec succès.
-T1tjdkql                    : Le fabricant a été remplacé avec succès.
-
-// themes/admin/public/forms/products.html
-T1iv6h2n                    : publié
-T14uogpk                    : au <b>TOP</b>
-Tv6t6qc                     : nouveau sur le marché
-Tfuxhkh                     : Choisir une catégorie existante
-T149eep1                    : Catégorie principale / Sous-catégorie 1 / Sous-catégorie 2
-T1bqjogx                    : Subcategories are created automatically by splitting / backslash char.
-T16lvwhe                    : Choisir un fabricant existant
-T1bfi9au                    : Description Simple
-Tnaljat                     : Ancien prix
-T104r1rh                    : Référence personnalisée
-T28ult4                     : Discponibilité
-T5zd9sq                     : Nom de variant
-Tuyncow                     : Entrer ex: taille et couleur
-T192qp25                    : Ajouter des photos
-Tnoqje2                     : Statisques de toutes les commandes
-T1e1dtuo                    : Modifier Produit
-Tgnpum8                     : Nouveau Produit
-T1hkeazf                    : Le Produit a été enrégistré avec succès.
-
-// themes/admin/public/forms/products.html, themes/admin/public/templates/products.html, themes/default/views/cms/product.html
-T1uhx7uq                    : Fabricant
-
-// themes/admin/public/forms/products.html, themes/default/views/cms/product.html
-T1yduwa                     : Tailles
-T1wqvv27                    : En stock
-
-// themes/admin/public/forms/products.html, themes/default/views/cms/product.html, themes/default/views/partials/filter.html
-T1twr2j8                    : Couleurs
-
-// themes/admin/public/forms/products.html, themes/admin/public/templates/products.html
-T1brchi                     : Stock
-
-// themes/admin/public/forms/settings-admin.html
-T1c5aa2q                    : Nom et Prénom
-Tlwyply                     : ex: agaperaston
-Tp1vkht                     : Générer mot de passe
-T1dh81k                     : Rôles
-T1wlt134                    : Si les rôles de l'utilisateur est vide alors il aura accès à toutes les fonctionalités.
-
-// themes/admin/public/forms/settings-admin.html, themes/admin/public/templates/settings.html
-T5okyr0                     : Nom d'utilisateur
-
-// themes/admin/public/forms/subscribers-import.html
-T1rp8mos                    : Importer des abonnés
-Tmpv115                     : Entrer toutes les nouvelles adresses e-mails
-Tvvzuo                      : Adresses email
-Telz1pn                     : Importation en cours...
-T5yhl3m                     : IMPORTER
-Toptgrh                     : Adresses e-mails importés avec succès.
-
-// themes/admin/public/forms/users.html
-T4obdof                     : Modifier l'utilisateur
-Tglpc1f                     : Statistiques de toutes les connexions depuis 16 mois
-T1hj3qs8                    : Statistiques de toutes les commandes depuis 16 mois
-T1rixbba                    : Remise %
-T1j0iljs                    : feminin
-T9qlrrf                     : Nom de compte
-T1lcxry2                    : Est bloqué
-T3kkasj                     : Est confirmé
-T1xgew4l                    : L\'utilisateur a été enrégistré avec succès.
-
-// themes/admin/public/forms/users.html, themes/admin/public/templates/users.html
-T4fyt40                     : masculin
-
-// themes/admin/public/forms/users.html, themes/admin/public/templates/users.html, themes/default/views/eshop/signin.html
-T14w86b                     : Genre
-
-// themes/admin/public/forms/users.html, themes/default/views/eshop/signin.html
-T1s8f6hf                    : Informations personnelles
-
-// themes/admin/public/forms/widgets-globals.html
-T1l9htm2                    : Editer des styles et scripts globaux
-T24g56e                     : Les variables globales peuvent contenir des valeurs pour des styles et des scripts. Les styles supportent auto-vendor-prefixes et des variables de déclaration comme dans les SASS. Chaque contenu sera minifié dans un seul fichier css ou js.
-T1kgonfk                    : CSS Global
-T1bdddau                    : Javascript global
-Tadeu2u                     : Variables Globales enrégistrées avec succès.
-
-// themes/admin/public/forms/widgets-import.html
-Tu8r3ep                     : Télécharger des widgets déja existant
-T12szute                    : Etes vous sûre de vouloir importer les widgets sélectionnés?
-Tn1f65x                     : Widget <b>{0}</b> importé avec succès.
-
-// themes/admin/public/forms/widgets-import.html, themes/admin/public/templates/subscribers.html
-T1t44s36                    : Importer
-
-// themes/admin/public/forms/widgets.html
-T11iyy4q                    : Layout
-T1psfkpw                    : Columnes
-T179lwey                    : Contenu
-Tmqzldf                     : Linéaire
-T1f7aymx                    : Newsletter
-T1dzbohv                    : Selectionner une catégorie déja existante
-T1qiht5n                    : Code-source
-Teckjal                     : Télécharger des widgets
-Tzxmggj                     : Model prédéfini
-T13gs4nu                    : Documentation
-Tdegsjc                     : Garder la taille fixe 300x200px
-T1ycg68d                    : Modifier widget
-T1o3qhm5                    : Nouveau widget
-T1x0oj3y                    : Widget enrégistré avec succès.
-
-// themes/admin/public/templates/dashboard.html
-T10c8koh                    : Nombre total visiteurs:
-T1cvg9nz                    : 'visiteurs', 'visiteur', 'visiteurs', 'visiteurs'
-T1kgho5q                    : Visiteurs en ligne
-T18k6m9o                    : Dernier visiteur:
-T14kj42x                    : Robots
-Tui9rei                     : Appareils Téléphones
-T9scv7                      : Ordinateurs de bureau
-T1py9yxd                    : Sources Aujourh'ui
-Td4vr6v                     : Depuis les réseaux sociaux
-T6syjf8                     : Depuis les publicités
-T2j3kga                     : Depuis la recherche organiques
-T12q446e                    : Visiteurs directs
-Tmqmtky                     : Depuis une source inconnue
-T1nwykyr                    : Aujourd'hui
-T1c7s0                      : Hits
-T1s8kbdo                    : Visiteurs
-Ttjpkiu                     : Visiteurs particuliers par mois
-T19rebf6                    : Les pages visitées par utilisateur
-T1k7dm                      : Type
-T1fy0b9t                    : Addresse
-Thw9lyb                     : Utilisateur
-T15g5yj                     : Heure
-T1v3gw30                    : +nouveau
-T13l1uin                    : Maximum de visiteurs en ligne par jours
-T5pw6lr                     : '# visiteurs', '# visiteur', '# visiteurs', '# visiteurs'
-T14gfvde                    : Particulier
-Tgaokq7                     : 'particuliers', 'particulier', 'particuliers', 'particuliers'
-T16fpa4g                    : 'visiteurs', 'visiteur', 'visitors', 'visiteurs'
-Tx3dx96                     : Bureau
-T1bsk7nc                    : Mobile:
-Tvheva8                     : Bureau:
-T192qx8i                    : Depuis les réseaux sociaux: {{ value.social }}%
-T42mil8                     : Social {{ value.social }}%
-Tu1f8yk                     : From publicités: {{ value.advert }}%
-T1n9ydg4                    : Publicités {{ value.advert }}%
-Ts4tn34                     : Depuis les moteurs de recherches: {{ value.search }}%
-T5wm751                     : Recherche {{ value.search }}%
-T1ri5o7z                    : Visiteurs directs: {{ value.direct }}%
-Trlug7o                     : Direct {{ value.direct }}%
-Tn5gm10                     : Depuis des sources inconnues: {{ value.unknown }}%
-T1q63awe                    : Inconnu {{ value.unknown }}%
-T1mrgmcz                    : Les références au TOP
-Teglcyy                     : Nouvelles commandes
-T4acs2h                     : Pages du rendu
-T1a0v5f                     : Posts
-Tbk14qh                     : Nouveaux abonnés
-T1diuikv                    : Nouveaux utilisateurs
-T10o60yh                    : Rendu de la Newsletter
-T17adqvx                    : Réseaux sociaux
-Tsvort9                     : Visiteurs de la pub
-T169uojw                    : Des moteurs de recherches
-To8tva                      : De sources inconnus
-T1kfewlc                    : En train de lire
-T14edgar                    : En train de parcourir
-T1f6ugq9                    : De la pub
-Twemt73                     : Des réseaux sociaux
-Tl2rsky                     : Visiteur direct
-Thuiqhh                     : Referrant
-
-// themes/admin/public/templates/dashboard.html, themes/default/public/widgets/contactform.html
-T1p9u1l7                    : Formulaire de contact
-
-// themes/admin/public/templates/newsletters.html
-Txijsik                     : Create
-T12d7q93                    : Envoi...
-T23l3c                      : send
-T1umm51z                    : Etes-vous sûre de vouloir supprimer la newsletter sélectionnée?
-T1cfkbsb                    : Newsletter supprimée avec succès.
-Tk3u62d                     : Supprimer les newsletters
-Tg817fz                     : Ete-vous sûre de vouloir supprimer toutes les newsletters sélectionnées?
-T1ij3woh                    : Newsletters supprimée avec succès!.
-Th1xwsm                     : Créer une newsletter
-
-// themes/admin/public/templates/newsletters.html, themes/admin/public/templates/notices.html, themes/admin/public/templates/orders.html, themes/admin/public/templates/pages.html, themes/admin/public/templates/posts.html, themes/admin/public/templates/products.html, themes/admin/public/templates/subscribers.html, themes/admin/public/templates/users.html, themes/admin/public/templates/widgets.html
-T6v6poe                     : Options
-T33pcpd                     : Rafraichir
-
-// themes/admin/public/templates/newsletters.html, themes/admin/public/templates/notices.html, themes/admin/public/templates/pages.html, themes/admin/public/templates/posts.html, themes/admin/public/templates/products.html, themes/admin/public/templates/widgets.html
-T1h0to4t                    : Dupliquer
-
-// themes/admin/public/templates/newsletters.html, themes/admin/public/templates/notices.html, themes/admin/public/templates/orders.html, themes/admin/public/templates/pages.html, themes/admin/public/templates/posts.html, themes/admin/public/templates/products.html, themes/admin/public/templates/settings.html, themes/admin/public/templates/users.html, themes/admin/public/templates/widgets.html
-T1px50jb                    : Modifier
-
-// themes/admin/public/templates/notices.html, themes/admin/public/templates/orders.html, themes/admin/public/templates/pages.html, themes/admin/public/templates/posts.html, themes/admin/public/templates/products.html, themes/admin/public/templates/widgets.html
-T12zvjb                     : Créer
-
-// themes/admin/public/templates/notices.html
-T1zh9x0                     : Epinglé
-Twvh70g                     : aaaa-MM-jj
-Tbu11vj                     : Etes-vous sûre de vouloir supprimer le post sélectionné?
-Tdcu1rq                     : Supprimer les notices
-T1s38u3z                    : Etes-vous sûres de vouloir supprimer les notices sélectionnés?
-Tq8u2m5                     : Notices Suprimmées avec succès.
-Txi5q79                     : Créer une notice
-
-// themes/admin/public/templates/notices.html, themes/admin/public/templates/posts.html, themes/admin/public/templates/products.html, themes/default/views/cms/product.html
-T1n1dgd3                    : Categorie
-
-// themes/admin/public/templates/notices.html, themes/admin/public/templates/posts.html
-T1pd                        : De
-T1uau7vj                    : Post supprimé avec succès.
-
-// themes/admin/public/templates/orders.html, themes/default/views/eshop/order.html, themes/default/views/mails/contact.html, themes/default/views/mails/order.html
-Txfbnqj                     : Client
-
-// themes/admin/public/templates/orders.html
-T21lj5                      : payé
-T1dbz7i7                    : Ete-vous sûre de vouloir supprimer la commande sélectionnée?
-Tyhoh2a                     : Commande supprimer avec succès!.
-T1sw7vbo                    : Supprimer les commandes
-T4f9kat                     : Etes-vous sûre de vouloir supprimer les commandes sélectionnées?
-Tqkkc0h                     : Commandes supprimées avec succès!.
-T1jlffpj                    : Créer une commande
-
-// themes/admin/public/templates/orders.html, themes/default/views/mails/order.html
-T154b66r                    : Statut
-
-// themes/admin/public/templates/orders.html, themes/default/views/eshop/order.html, themes/default/views/eshop/settings.html
-T14f82ip                    : Remise
-
-// themes/admin/public/templates/orders.html, themes/admin/public/templates/users.html, themes/default/views/cms/product.html, themes/default/views/eshop/order.html, themes/default/views/mails/contact.html, themes/default/views/mails/order.html
-Tt0ni1k                     : Date_créa
-
-// themes/admin/public/templates/pages.html
-T1utb3oa                    : Variables Globales
-T1lx0q69                    : partial
-Tb2seqi                     : Afficher
-Tkzudyl                     : Etes-vous sûre de vouloir supprimer la page sélectionnée?
-T1ic3hnq                    : Page supprimée avec succès!.
-T88paov                     : Supprimer les pages
-Tmxzj16                     : Etes-vous sûre de vouloir supprimer les pages sélectionnées?
-T16s1dba                    : Pages supprimées avec succès!.
-Tjmf10c                     : Créer une page
-
-// themes/admin/public/templates/pages.html, themes/admin/public/templates/subscribers.html
-T14f871g                    : Remove
-T1y9                        : No
-
-// themes/admin/public/templates/pages.html, themes/admin/public/templates/widgets.html
-Tvs07dj                     : Variables
-T1pffvhi                    : Global style/script
-
-// themes/admin/public/templates/posts.html
-Tjk8yaq                     : non publié
-T1nk3fu4                    : Etes vous sûre de vouloir supprimer le post sélectionné?
-Tgljyyy                     : Publier / ne pas publier
-Tzfam3b                     : Remove posts
-Tjrh7po                     : Etes vous sûre de vouloir supprimer tous les posts sélectionnés?
-Tpfwa4j                     : Posts supprimés avec succès.
-T1bqi6fi                    : Créer un post
-
-// themes/admin/public/templates/products.html
-T7f199p                     : pas publié
-Tz8jg1j                     : nouveau
-T2gr9                       : top
-Tvh22nr                     : Prix a partir de
-T1mv0pdi                    : rupture de stock
-T1im63dd                    : L\'importation des produits a démarré. <b>Veuillez patienter...</b>.
-Tskuqsg                     : Etes vous sûr de vouloir supprimer le produit sélectionné?
-Tbk2bk                      : Le produit a été supprimé avec succès.
-Tzs2y                       : Publier / Ne pas publier
-T1y15yt3                    : Supprimer des produits
-T1a9y8pl                    : Etes vous sûr de vouloir supprimer les produits sélectionnés?
-T15h9tbc                    : Les produits ont été supprimés avec succès!.
-T1ufwgae                    : Ajouter un product
-Tuimq70                     : Remplacer categorie
-T11z6hon                    : Remplacer fabricant
-Tse7ciy                     : Importer depuis JSON
-T18q2fax                    : Exporter vers JSON
-
-// themes/admin/public/templates/settings.html
-T1jkl6q4                    : Paramètre Général
-T3wx4x1                     : ex: https://eshop.totaljs.com
-T4lxw84                     : Email pour le formulaire de contact
-T92oc6                      : Email pour le formulaire de commande
-T17rv5p9                    : Email pour le formulaire d'utilisateur
-Tre1or3                     : Email pour les réponses
-T1ueyi30                    : Email pour l'envoi
-T6icrbh                     : Livraison et paiement
-T3rcqj0                     : Un stat par défaut pour les commandes
-T127idap                    : Monaie
-T18ldb4m                    : Supporte
-T7ja9o9                     : Saisir une valeur et taper sur Entrer
-T19zsj2x                    : Types de livraison
-Tp4ycj6                     : Type de  paiement
-T1ewamjc                    : Signature
-T10s76mq                    : Activer <b>un mode test pour paypal</b>
-T127c2h6                    : Models
-T1kq74bp                    : Un nom de model
-Tz491bn                     : Saisir le nom d'une vue
-T6qddfc                     : Models de page
-Tkir5ia                     : Models de newsletter
-T6qdo3t                     : Models de post
-T1rquyhf                    : Models de produits
-T1dneu72                    : Tous les models doivent être manuellement créés dans le dossier suivant <code>/themes/THEME_NAME/views/cms/</code>.
-T6jjjxi                     : Un nom d'une navigation
-T1eia62r                    : Saisir le nom d'un indicateur et taper sur entrer
-T4tvtkx                     : Navigations déja existantes
-T19ml8c1                    : Variable Globale: <code>F.global.navigation.IDENTIFICATOR</code>
-T1iarboc                    : Un nom de notice
-T19zz2xa                    : Catégorie notices
-T1jvoqtu                    : Variables Globale: <code>F.global.notices</code>
-T1ktmppg                    : Un nom de post
-T7lthtr                     : Catégories de post
-Tm9tbve                     : Variables Globale: <code>F.global.posts</code>
-T1kkggx8                    : Un nom de signal
-T1pzg9vi                    : Les signaux enregistrés
-T1yze57a                    : Les signaux peuvent affecter un comportement dans les ages ou les produits
-T1ptaomo                    : Niveau 1 / Niveau 2 / Niveau 3
-T1e4yf0h                    : Catégories prédéfinies de produits
-T15trmnv                    : Chaque ligne seta considéré comme une catégarie.
-T1aqqd1r                    : Paramètres SMTP
-Tcast42                     : smtp.yourdomain.com
-Tkoyx4a                     : Serveur SMTP
-Trrb7l2                     : Adresse ip ou nom de domaine.
-T147qrw8                    : Options SMTP
-T1r65jba                    : Les options doivent être en format JSON.
-Txljpn1                     : Liste de tous les administrateurs enrégistrés:
-Tms6gwm                     : Ajouter un nouvel administrateur
-Tf9kzpo                     : Tous les privilèges
-Tgb3c1s                     : ENREGISTRER
-T126vckk                    : Les paramètres ont été enregistrés avec succès!.
-T382o9c                     : Etes vous sûr de vouloir supprimer l\'utilistateur <b>"{0}"</b>?
-
-// themes/admin/public/templates/subscribers.html, themes/default/views/eshop/settings.html, themes/default/views/eshop/signin.html, themes/default/views/mails/contact.html
-Tlz6swg                     : Adresse e-mail
-
-// themes/admin/public/templates/subscribers.html
-T1rln43t                    : désabonné
-Twsboaw                     : Bannir
-T1ysv2ei                    : Etes vous sur de vouloir supprimer l\'abonné sélectionné?
-T1r1pd4b                    : L\'abonné a été supprimé avec succès!.
-T11hkc4t                    : S\'abonner/ Se désabonner
-Thojigp                     : Supprimer abonnés
-T2z9hfg                     : AEtes vous sûr de voiloir supprimer les abonnés sélectionnés?
-T1qkp722                    : Les abonnés ont été supprimés aves succès!.
-T1oa68xa                    : Importer les addresses
-Tdizgqs                     : Exporter les addresses to CSV
-
-// themes/admin/public/templates/subscribers.html, themes/default/views/eshop/settings.html
-Trrgzue                     : Enregistré
-
-// themes/admin/public/templates/users.html
-T1qi7fwp                    : Confirmé
-T1vkckne                    : en ligne
-T1c3u11c                    : bloqué
-T1ahcnmc                    : féminin
-Ttilera                     : Etes vous sûr de vouloir supprimer l\'utilisateur sélectionné?
-T10uxpfs                    : L\'utilisateur a été supprimer avec succès.
-T1x0pc3z                    : Supprimer utilisateurs
-T1xx19q7                    : Etes vous sûr de vouloir supprimer les utilisateurs sélectionnés?
-Tgdvrwu                     : Les utilisateurs ont été supprimés avec succès!.
-
-// themes/admin/public/templates/users.html, themes/default/views/eshop/account.html
-T16fswud                    : Rémise
-
-// themes/admin/public/templates/widgets.html
-Tc8ruz5                     : Importer un widget déja existant
-Ttj6byo                     : Globals
-T1wk6ce                     : Category
-Tf93817                     : Etes vous sûr de vouloir supprimer le widget sélectionné?
-T1g7xdrm                    : Le widget a été supprimé avec succès!.
-T1qtd2ya                    : Créer un widget
-T13jivum                    : Importer existant
-T1c4a81f                    : Remove widgets
-T148e2qm                    : Etes vous sûr de vouloir supprimer les widgets sélectionnés?
-T12w3g8q                    : Les widgets ont été supprimés avec succès.
 
 // themes/default/public/widgets/contactform.html, themes/default/views/eshop/checkout.html
-T1rzeykt                    : ex:+22652133010
+T1rzeykt                    : ex :+22652133010
 
 // themes/default/public/widgets/contactform.html
 T17bmnl3                    : Message
-T1ktkiv5                    : Envoyer le formulaire
+T1ktkiv5                    : Send form
 
 // themes/default/views/cms/newsletter.html
-T1tqta69                    : Je ne veux plus recevoir des mails pareils.
-Ta9gz91                     : Me désabonner
+T1tqta69                    : I don't want to receive similar emails.
+Ta9gz91                     : Unsubscribe me
 
 // themes/default/views/cms/product.html
-T1t918wr                    : Images de @{model.name}
-T14echgh                    : Disponibilité
-Tbtf2lh                     : Ancien prix:
+T1t918wr                    : Images of @{model.name}
+T14echgh                    : Avaibility
+Tbtf2lh                     : Old price:
 T1ffmv81                    : Variance
 Twchdg6                     : Action
-T87241q                     : Achéter
-T18x93me                    : Rupture de stock
-T14zhblo                    : Achéter:
-T9trbo5                     : Le produit n'est pas en stock en ce moment.
+T87241q                     : Buy
+T18x93me                    : Out of stock
+T14zhblo                    : Buy :
+T9trbo5                     : The product is out of stock.
 
 // themes/default/views/eshop/account.html, themes/default/views/eshop/settings.html
-T18px0vv                    : Nom du compte
+T18px0vv                    : Account name
 
 // themes/default/views/eshop/account.html, themes/default/views/eshop/checkout.html, themes/default/views/eshop/order.html
-T6tqwa8                     : Adresse E-mail
+T6tqwa8                     : E-mail 	adress
 
 // themes/default/views/eshop/account.html
 T1hv1b2o                    : undefined
-Te5coqr                     : Mettre à jours le compte
-Tmmuz5p                     : Parcourir les produits
-T1o8d9g4                    : Mes commandes
-T168dhyh                    : Vous n'avez pas encore fait de commande.
+Te5coqr                     : Update account
+Tmmuz5p                     : Browse the products
+T1o8d9g4                    : My orders
+T168dhyh                    : You do not have any order.
 
 // themes/default/views/eshop/category.html
-T1l17v6i                    : Aucun produit en base de données.
+T1l17v6i                    : No product in database.
 
 // themes/default/views/eshop/checkout.html
-T1ddaz2b                    : Votre panier est vide, <b>Choisissez vos produits et visitez cette page plutard.</b>
-Tly1xbf                     : Prix unitaire =
-Tkx1hz0                     : Addresse de Facturation
-T10h23ub                    : Rue ou quartier
-T1d7nea                     : Ville
-T1waoh2q                    : Entreprise de facturation
-T5kfz8b                     : Numero TVA
-Tybuha7                     : Choisir un type livraison.
-T144m69y                    : Choisir un type de paiement.
-T16y2bxd                    : Addresse de livraison
+T1ddaz2b                    : Your shopping cart is empty, <b>try to visit this page later.</b>
+Tly1xbf                     : 1 piece =
+Tkx1hz0                     : Billing adress
+T10h23ub                    : Street
+T1d7nea                     : City
+T1waoh2q                    : Company
+T5kfz8b                     : TVA number
+Tybuha7                     : Coose delivery type.
+T144m69y                    : Choose payment type.
+T16y2bxd                    : Delivery adress
 T1th1585                    : Last name
 Tl6mseu                     : Ex +22656545432
 T1qbu0rf                    : Phone number
-T1o07fus                    : Ce numéro c'est pour le courier.
-T19jsd16                    : Remplir la même chose que plus haut
-T58ev1o                     : Copier l'adresse de livraison
-T1gfg3al                    : Je veux être notifier a propos des promo et des nouveautés
+T1o07fus                    : This number is for courier.
+T19jsd16                    : Copy same data as above
+T58ev1o                     : Copy from billing address
+T1gfg3al                    : I want to be notified about discounts and news
 T25inu7                     : j'accepte les termes et les conditions
-T8ct3x4                     : Commander
+T8ct3x4                     : Submit order
 T0                          :
 
 // themes/default/views/eshop/order.html
-Todffnu                     : Nous n'avons pas recu de paiement. <b>Essayer à nouveau le paiement</b>.
-T10x3xzl                    : <b>Merci beaucoup</b>, votre commande a été payé.
-T1cyb5la                    : Statut de commande:
-T185466z                    : Un message pour vous
+Todffnu                     : We didn't receive a payment. <b>Try to pay again</b>.
+T10x3xzl                    : <b>Thank you</b>, order has been paid.
+T1cyb5la                    : Order status:
+T185466z                    : Message for you
 T1g64y                      : Note
-Txkl5ou                     : Payer par Orange Money ou Mobicash
+Txkl5ou                     : Pay with mobile money
 T147wkj1                    : ex:22676543432
-Ty7k0xw                     : Numéro Orange Money ou Mobicash
-T6vpr9o                     : Choisissez votre moyen de paiement.
-T1hv47e6                    : Payer maintenant
-T172v4il                    : Vous allez être redirigé vers page <b>PayPal</b> de paiement sécurisé.
-T1ghfl                      : PAYÉ
-Tzp76qc                     : NON PAYÉ
-T1cmezh2                    : Non défini
-T1c11na6                    : Adresse de facturation
-T1nxb3dq                    : Téléphone:
-T1vz933y                    : Nom de produit
-T12ojdnt                    : Nombre
+Ty7k0xw                     : Mobile money account number
+T6vpr9o                     : Choose your payment type.
+T1hv47e6                    : Pay now
+T172v4il                    : You will be redirect to secured <b>CinetPay</b> payment page.
+T1ghfl                      : PAID
+Tzp76qc                     : NOT PAID
+T1cmezh2                    : Not defined
+T1c11na6                    : Billing adress
+T1nxb3dq                    : Phone :
+T1vz933y                    : Prduct name
+T12ojdnt                    : Number
 
 // themes/default/views/eshop/order.html, themes/default/views/mails/order.html
-T16fwzmd                    : Résumé
+T16fwzmd                    : Summarize
 
 // themes/default/views/eshop/settings.html
-T1hzgh9                     : Vous pouvez modifier les informations de votre compte à ce niveau.
+T1hzgh9                     : In this place you can modify your account information.
 T1uut35d                    : ex:+22652754855
-T1rff2am                    : Je veux changer mon mot de passe
-T2q2nes                     : Soumettre
+T1rff2am                    : I want to change my password
+T2q2nes                     : Submit
 Tdw64gd                     : Your account has been changed successfully.
 
 // themes/default/views/eshop/settings.html, themes/default/views/eshop/signin.html
-T4j9h6v                     : Sera utilisé comme nom de connexion.
-T11fm3x1                    : Confirmation
+T4j9h6v                     : Will be used as a login name.
+T11fm3x1                    : Password again
 
 // themes/default/views/eshop/signin.html
-Tozjmvh                     : Mot de passe oublié
-T4o9ldz                     : Récupération de mot de passe
-T13eoy7y                    : Retourner vers la connexion
-T1cw36uc                    : Réinitialiser
-Tybb5iw                     : Inscription
-T15mdry                     : Homme
-T14cepy                     : Femme
-T1uqymhm                    : Informations de contact
+Tozjmvh                     : I forgot my password
+T4o9ldz                     : Password recovery
+T13eoy7y                    : Back to sign in
+T1cw36uc                    : Reset
+Tybb5iw                     : Sign up
+T15mdry                     : Male
+T14cepy                     : Female
+T1uqymhm                    : Personnal informations
 T1jgspe1                    : ex:22656920671
-T1pfude7                    : J'accepte les termes et les conditions
-T1t1jnv7                    : S'inscrire
-T10w0rov                    : Nous vous avons envoyé un email contenant les intructions de réinitialisation de votre mot de passe.
+T1pfude7                    : I accept the terms and conditions
+T1t1jnv7                    : Sign up
+T10w0rov                    : We sent you the email with instructions for resetting password.
+
 
 // themes/default/views/mails/contact.html
-Ty5ndae                     : Cher administrateur
-T19a9n9n                    : Vous venez de recevoir un formulaire de  contact dans votre site web. Veuillez regarder les details ci-dessous et répondez si besoin:
-T1k3vw81                    : Numéro de contact
+Ty5ndae                     : Dear administrator
+T19a9n9n                    : On your website has been sent a contact form. Please check the contact form data below and reply on it:
+T1k3vw81                    : Contact number
 T1sghbn7                    : Message:
 
 // themes/default/views/mails/order.html, themes/default/views/mails/password.html, themes/default/views/mails/registration.html
@@ -1024,33 +486,33 @@ T18zqq                      : Cher
 
 // themes/default/views/mails/order.html
 T4dyk63                     : Merci beaucoup pour votre commande. Votre commande a été receptionnée. Ce mail est une confirmation de la reception.
-Ty0vgt5                     : Numéro de commande
+Ty0vgt5                     : Order number
 T189wvkb                    : Adresse email
-Tk12wuh                     : Coût total
-T1peyiyf                    : Adresse de livraison:
-T1tx9qk4                    : Produits commandéss
+Tk12wuh                     : Total price
+T1peyiyf                    : Delivery address:
+T1tx9qk4                    : TRACK ORDER
 T1a2ka1                     : Price
-T1u9x8oj                    : Suivi de commande
+T1u9x8oj                    : Order tracking
 
 // themes/default/views/mails/password.html
-Ttz0ncg                     : Vous avez demandé une récupération de mot de passe . Cliquez sur le bouton suivant pour réinitialiser votre mot de passe. Si vous n'avez fait aucune demande de récupération de mot de passe, ignorez ce mail.
-T1cbulr4                    : CLIQUER ICI
+Ttz0ncg                     : you used the password recovery. Please click on the button below for resetting your password. If you received this email by mistake then you remove it.
+T1cbulr4                    : CLICK HERE
 
 // themes/default/views/mails/registration.html
-T12b9my1                    : Merci pour l'inscription. Votre compte a été créé avec succès et ce mail est la réponse automatique qui prouve la création de votre compte...Félicitations!!!.
-T1djf1pw                    : Mon compte
+T12b9my1                    : Many thanks for the order. Your order has been created successfully. This email is a confirmation of your order.
+T1djf1pw                    : MY ACCOUNT
 
 // themes/default/views/partials/filter.html
-T1pyk2ab                    : Producteur
-Ttsimh1                     : Quantité/Poids
-T1yduup                     : Taille:
-T1twr2hn                    : Couleur:
-Tedh53g                     : Nouveauté
-T1gx7cxx                    : Prix bas
-T6vaa93                     : Prix Haut
+T1pyk2ab                    : Provider
+Ttsimh1                     : Quantity/Weight
+T1yduup                     : Size:
+T1twr2hn                    : Color:
+Tedh53g                     : New
+T1gx7cxx                    : Low Price
+T6vaa93                     : High Price
 
 // themes/default/views/partials/products.html
-T1b40b13                    : NOUVEAU
+T1b40b13                    : New
 T1s8l                       : TOP
 Txspnqp                     : Detail
-T1mxnz0b                    : Stock épuisé
+T1mxnz0b                    : Out of stock
