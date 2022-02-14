@@ -1,5 +1,5 @@
 exports.install = function() {
-	ROUTE('/*', view_cms);
+ ROUTE('/*', view_cms);
 
 	// Posts
 	ROUTE('#posts', view_posts, ['*Post']);
