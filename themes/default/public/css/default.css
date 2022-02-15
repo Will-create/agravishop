@@ -42,8 +42,8 @@ header nav .fa { margin-right: 5px; }
 .categoriescontainer nav a.selected { font-weight: bold; color: #2D2D2D; }
 .categoriescontainer a span { padding: 1px 3px; border-radius: 2px; position: relative; display: inline-block; font-size: 10px; color: white; background-color: #D63B32; vertical-align: top; padding: auto; margin-left: 5px; line-height: 10px; font-weight: bold; }
 .categoriesvisible { display: block !important; }
-.customNav2 { color :white; background-color: #056005;  padding: 4px;}
-.customNav { color :white; background-color: #056005;  padding: 10px 10px;}
+.customNav2 { color :#056005; background-color: #01de03;  padding: 4px;}
+.customNav { color :#056005; background-color: #01de03;  padding: 10px 10px;}
 .customNav a { text-decoration: none; color:white!important; font-family: monospace!important;}
 .badge { padding: 1px 3px; border-radius: 2px; position: relative; display: inline-block; font-size: 10px; color: white; background-color: #D63B32; vertical-align: top; margin-left: 5px; line-height: 10px; font-weight: bold; }
 .badge-green { background-color: #68B25B; }
@@ -243,7 +243,7 @@ h1 .fa, h2 .fa { margin-right: 10px; }
 	.detail-prices td { display: block; width: 100%; }
 	.detail-prices-name { font-weight: bold; background-color: white; border-bottom: 0 !important; }
 	.detail-prices-stock { display: none !important; }
-	.account a { color: #056005!important; }
+	.account a { color: #11c711!important; }
 	.wnowrap { overflow-x: auto; text-overflow: clip; overflow-scrolling: touch; }
 }
 

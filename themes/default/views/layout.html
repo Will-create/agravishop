@@ -66,7 +66,7 @@
 						</div>
 						@{view('partials/categories')}
 						<div class="categoriesbody npb">
-							<div class="caption">@(RECOMMANDÉS)</div>
+							<div class="caption">@(AGRAVI BURKINA)</div>
 						</div>
 						<nav>
 							@{foreach m in F.global.navigations.panel.children}
@@ -74,7 +74,6 @@
 							@{end}
 							<a href="#"><i class="ion ion-ios-chatbubble-outline"></i>********</a>
 							<a href="@{sitemap_url('new')}"><i class="fa fa-caret-right"></i>@(Nouveaux Produits)</a>
-							<a href="@{sitemap_url('top')}"><i class="fa fa-caret-right"></i>@(Produits TOP à la mode)</a>
 							<a href="@{sitemap_url('popular')}"><i class="fa fa-caret-right"></i>@(Populaire)<span>@(Nouveau)</span></a>
 							<a href="@{sitemap_url('category')}"><i class="fa fa-caret-right"></i>@(Tous les produits)</a>
 						</nav>
@@ -92,7 +91,7 @@
 								<a href="@{m.url}">@{if m.icon}<i class="fa fa-@{m.icon}"></i>@{fi}@{m.name}</a>
 							@{end}
 						</nav>
-						<nav style="background-color: #2D2D2D!important;height:1px!important;margin-bottom:10px;" class="customNav2" >
+						<nav style="background-color: #056005!important;height:1px!important;margin-bottom:10px;" class="customNav2" >
 
 						</nav>
 						<div class="shoppingcart" data-m="shoppingcart.sum + shoppingcart">
