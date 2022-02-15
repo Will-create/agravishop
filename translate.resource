@@ -100,9 +100,9 @@ T1071879433                 : 'il y\'a ' + seconds + Tangular.helpers.pluralize(
 T109270                     : Maintenant
 T-384049170                 : 'il y\'a '+ minutes + ' minutes'
 T-203634781                 : 'il y\'a ' + hours + ' ' + Tangular.helpers.pluralize(hours, 'heures', 'heure', 'heures', 'heures')
-T-10559765                  : 'il y\'a ' + days + ' ' + Tangular.helpers.pluralize(days, 'jours', 'jours', 'jours', 'jours') 
-T-689200589                 : 'il y\'a ' + mois + ' ' + Tangular.helpers.pluralize(months, 'mois', 'mois', 'mois', 'mois') 
-T-735310909                 : 'il y\'a ' + years + ' ' + Tangular.helpers.pluralize(années, 'années', 'année', 'années', 'années') 
+T-10559765                  : 'il y\'a ' + days + ' ' + Tangular.helpers.pluralize(days, 'jours', 'jours', 'jours', 'jours')
+T-689200589                 : 'il y\'a ' + mois + ' ' + Tangular.helpers.pluralize(months, 'mois', 'mois', 'mois', 'mois')
+T-735310909                 : 'il y\'a ' + years + ' ' + Tangular.helpers.pluralize(années, 'années', 'année', 'années', 'années')
 T262574666                  : Le produit a été enregisté avec succès!
 T365918789                  : Le menu de navigation a été enregistré avec succès!
 T-555013092                 : Gatégorié remplacée avec succès!

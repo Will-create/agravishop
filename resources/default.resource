@@ -11,7 +11,7 @@ error-data                 : Données invalides.
 error-terms                : Vous devez accepter les termes et les conditions.
 error-password-check       : Mots de passe non identiques.
 
-error-orders-stock         : We avons seulement {1} "{0}" en stock.
+error-orders-stock         : Nous avons seulement {1} "{0}" en stock.
 
 error-products-404         : Le Produit est introuvable.
 error-products-stock       : Le Produit est en manque.

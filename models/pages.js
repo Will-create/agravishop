@@ -138,6 +138,56 @@ NEWSCHEMA('Page').make(function(schema) {
 
 		$.callback();
 	});
+	schema.addWorkflow('fix', function($) {
+
+
+	var sitemap = {};
+	var helper = {};
+	var partial = [];
+	var pages = [];
+
+	var prepare = function(doc) {
+
+		// A partial content is skipped from the sitemap
+		if (doc.ispartial) {
+			partial.push({ id: doc.id, url: doc.url, name: doc.name, title: doc.title, icon: doc.icon });
+			return;
+		}
+
+		var key = doc.url;
+		var obj = { id: doc.id, url: doc.url, name: doc.name, title: doc.title, parent: doc.parent, icon: doc.icon, links: [] };
+
+		helper[doc.id] = key;
+		sitemap[key] = obj;
+		pages.push(obj);
+	};
+
+	NOSQL('pages').find().prepare(prepare).callback(function() {
+
+		// Pairs parents by URL
+		Object.keys(sitemap).forEach(function(key) {
+			var parent = sitemap[key].parent;
+			if (parent) {
+				sitemap[key].parent = helper[parent];
+				sitemap[sitemap[key].parent].links.push(sitemap[key]);
+			}
+		});
+
+		F.global.sitemap = sitemap;
+		F.global.partial = partial;
+		F.global.pages = pages;
+		console.log(sitemap);
+		console.log(partial);
+		console.log(pages);
+		$GET('PageGlobals', function(err, response) {
+			parseGlobals(response.body);
+			F.cache.removeAll('cachecms');
+			loaded = true;
+		});
+	});
+
+		$.success({ sitemap : F.global.sitemap, pages : F.global.pages, partials : F.global.partials  });
+	});
 
 	// Replaces all older links to a new
 	schema.addWorkflow('replacelinks', function($) {

@@ -11,6 +11,10 @@
 	<meta name="robots" content="all,follow" />
 	<link rel="stylesheet" href="//cdn.componentator.com/spa.min@14.css" />
 	<script src="//cdn.componentator.com/spa.min@14.js"></script>
+	<script src="https://unpkg.com/ionicons@6.0.1/dist/ionicons.js"></script>
+	<link rel="stylesheet" href="http://agraviburkina.com:8004/ionic/css/ionicons.min.css" />
+
+
 	@{import('head', '/admin.css', '/admin.js', 'favicon.ico')}
 </head>
 <body data-jc="exec,binder">
@@ -24,7 +28,7 @@
 	<div data-jc="snackbar" data-jc-config="button:@(Fermer);timeout:4500"></div>
 	<div data-jc="suggestion" data-jc-config="placeholder:@(Rechercher)"></div>
 	<div data-jc="mainprogress" data-jc-path="common.progress"></div>
-	<div data-jc="websocket" data-jc-config="reconnect:5000;url:[url]live/"></div>
+	<div data-jc="websocket" data-jc-config="reconnect:5000;url:ws//31.207.39.183:8001/admin/live/"></div>
 	<div data-jc="shortcuts"></div>
 	<div data-jc="features" data-jc-config="placeholder:@(Rechercher...)"></div>
 	<div data-jc="autocomplete"></div>
