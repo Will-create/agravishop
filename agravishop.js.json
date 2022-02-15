@@ -1,5 +1,5 @@
 {
-  "pid": 74636,
+  "pid": 81426,
   "stats": [
     {
       "id": null,
@@ -8,17 +8,17 @@
         "total": "3.4.5",
         "app": "1.0.0"
       },
-      "pid": 74636,
+      "pid": 81426,
       "thread": "",
       "mode": "release",
-      "date": "2022-02-14T21:07:57.968Z",
-      "memory": 12.88,
-      "rm": 14.54,
-      "fm": 2.18,
+      "date": "2022-02-15T08:42:47.545Z",
+      "memory": 15.45,
+      "rm": 17.37,
+      "fm": 0.43,
       "usage": 0,
-      "requests": 160,
-      "pending": 0,
-      "errors": 7,
+      "requests": 1633,
+      "pending": 1,
+      "errors": 1,
       "timeouts": 0
     }
   ]
