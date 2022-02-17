@@ -1,5 +1,8 @@
 exports.install = function() {
- ROUTE('/*', view_cms);
+
+	GROUP(['#middleware1', '#middleware2'], function() {
+   			ROUTE('/*', view_cms);
+    });
 
 	// Posts
 	ROUTE('#posts', view_posts, ['*Post']);

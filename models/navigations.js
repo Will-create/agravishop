@@ -2,6 +2,7 @@ NEWSCHEMA('NavigationItem').make(function(schema) {
 	schema.define('id', 'String(20)');
 	schema.define('idpage', 'UID'); // Page ID
 	schema.define('name', 'String(50)', true);
+	schema.define('name_en', 'String(50)', true);
 	schema.define('url', 'String(500)', true);
 	schema.define('title', 'String(100)');
 	schema.define('icon', 'Lower(20)');
@@ -33,6 +34,7 @@ NEWSCHEMA('Navigation').make(function(schema) {
 		var nav = F.global.config.navigations.findItem('id', model.id);
 		if (nav) {
 			model.name = nav.name;
+			model.name_en = nav.name_en;
 			model.dateupdated = F.datetime;
 		} else {
 			$.invalid('error-navigations-404');
@@ -136,6 +138,7 @@ function refresh() {
 
 			F.global.navigations[item.id] = item;
 			item.name = tmp.name;
+			item.name_en = tmp.name_en;
 			item.url = {};
 			item.stringify = function() {
 				var skip = { parent: true, url: true };
