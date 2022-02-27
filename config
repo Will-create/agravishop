@@ -12,6 +12,9 @@ admin-tracking            : true
 // Image convertor for resizing of pictures
 // Default image converter: im = ImageMagick, gm = GraphicsMagick
 default_image_converter   : im
+//
+ligdicash_debug          :  true
+
 
 // Default theme
 default_theme             : default

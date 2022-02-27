@@ -18,7 +18,7 @@
 </head>
 <body data-jc="exec,binder,modificator">
 	<style>
-		.bg-orange{background-color: #01de03; color:white;padding-top: 1em;}
+		.bg-orange{background-color: #01de03; color:#056005;padding-top: 1em;}
 		.bg-red{background-color: red; color:white;padding-top: 1em;}
 
 		@keyframes clignote {
@@ -34,7 +34,6 @@
 				padding-bottom: 3px;
 				border: 1px solid #DDD;
 				}
-
 	</style>
 	<br />
 	<div data-jc="loading" class="ui-loading@{if !repository.loading} hidden@{fi}"></div>
@@ -45,11 +44,11 @@
 		<div class="relative">
 			<div class="account">
 				@{if user}
-					<a style="text-decoration: none;  color : white;position:relative; top:18px; margin-bottom:5px" href="@{sitemap_url('account')}" class="b">@{user.name}</a>
-					<a style="text-decoration: none;  color : white;position:relative; top:18px; margin-bottom:5px" href="@{sitemap_url('settings')}"><i class="fa fa-cog"></i>@(Paramètres)</a>
-					<a style="text-decoration: none;  color : white;position:relative; top:18px; margin-bottom:5px" href="@{sitemap_url('logoff')}"><i class="fa fa-sign-out"></i>@(Déconnexion)</a>
+					<a style="color:#056005" href="@{sitemap_url('account')}" class="b">@{user.name}</a>
+					<a style="color:#056005" href="@{sitemap_url('settings')}"><i class="fa fa-cog"></i>@(Paramètres)</a>
+					<a style="color:#056005" href="@{sitemap_url('logoff')}"><i class="fa fa-sign-out"></i>@(Déconnexion)</a>
 				@{else}
-					<a style="text-decoration: none;  color : white;position:relative; top:18px; margin-bottom:5px" href="@{sitemap_url('account')}"><i class="fa fa-lock"></i>@(Connexion)</a>
+					<a style="color:#056005" href="@{sitemap_url('account')}"><i class="fa fa-lock"></i>@(Connexion)</a>
 				@{fi}
 			</div>
 		</div>
@@ -90,7 +89,7 @@
 						</nav>
 						<nav style="margin-bottom:10px;" class="customNav" >
 							@{foreach m in F.global.navigations.menu.children}
-								<a href="@{m.url}">@{if m.icon}<i class="fa fa-@{m.icon}"></i>@{fi}@{m.name}</a>
+								<a style="color:#056005!important" href="@{m.url}">@{if m.icon}<i style="color:#056005" class="fa fa-@{m.icon}"></i>@{fi}@{m.name}</a>
 							@{end}
 						</nav>
 						<div class="shoppingcart" data-m="shoppingcart.sum + shoppingcart">
@@ -101,7 +100,6 @@
 							<div><input type="text" placeholder="@(Rechercher...)" name="q" value="@{query.q}" id="search" autocomplete="off" /></div>
 						</form>
 					</header>
-
 					<nav class="breadcrumb mt2">
 						@{foreach m in sitemap()}
 							@{if m.id === 'category'}

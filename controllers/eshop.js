@@ -145,15 +145,15 @@ function view_order(id) {
 			if (!self.query.numero){
 				switch (self.query.payment) {
 					case 'paypal':
-						
+
 						 paypal_redirect(response, self);
-					   
+
 						return;
 					}
-			
+
 			}else{
-                
-				
+
+
 				ligdicash_pay(response,self);
 
 			}
@@ -204,19 +204,19 @@ function ligdicash_pay(order, controller) {
 	 ligdicash.post(order, controller, function(retour){
 		if(retour.status === 200){
 			if(retour.data.response_code === 00){
-				
+				console.log('success');
 			}else{
 				LOGGER('ligdicash',order.id,retour.data.response_text);
-				
+
 			}
 		}else{
 
 		}
 		console.log(retour.data.response_code);
-	
+
 	});
-	
-		
+
+
 }
 
 function paypal_process(id) {
