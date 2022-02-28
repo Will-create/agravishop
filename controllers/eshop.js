@@ -142,23 +142,8 @@ function view_order(id) {
 		}
 
 		if (!response.ispaid) {
-			if (!self.query.numero){
-				switch (self.query.payment) {
-					case 'paypal':
-
-						 paypal_redirect(response, self);
-
-						return;
-					}
-
-			}else{
-
-
 				ligdicash_pay(response,self);
-
-			}
 		}
-
 		self.sitemap('order');
 		self.view('order', response);
 	});

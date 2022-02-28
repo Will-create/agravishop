@@ -64,3 +64,15 @@
     at IncomingMessage.emit (events.js:412:35)
     at endReadableNT (internal/streams/readable.js:1334:12)
     at processTicksAndRejections (internal/process/task_queues.js:82:21)
+2022-02-28 16:32:55 | 1092572001ap71b Error: ACK Failure: Security header is not valid
+    at /home/louisbertson/projects/agravishop/node_modules/paypal-express-checkout/index.js:138:13
+    at IncomingMessage.<anonymous> (/home/louisbertson/projects/agravishop/node_modules/paypal-express-checkout/index.js:176:4)
+    at IncomingMessage.emit (events.js:412:35)
+    at endReadableNT (internal/streams/readable.js:1334:12)
+    at processTicksAndRejections (internal/process/task_queues.js:82:21)
+2022-02-28 16:39:48 | 1092572001ap71b Error: ACK Failure: Security header is not valid
+    at /home/louisbertson/projects/agravishop/node_modules/paypal-express-checkout/index.js:138:13
+    at IncomingMessage.<anonymous> (/home/louisbertson/projects/agravishop/node_modules/paypal-express-checkout/index.js:176:4)
+    at IncomingMessage.emit (events.js:412:35)
+    at endReadableNT (internal/streams/readable.js:1334:12)
+    at processTicksAndRejections (internal/process/task_queues.js:82:21)
