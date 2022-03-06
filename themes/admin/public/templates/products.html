@@ -42,7 +42,7 @@
 					SETTER('loading', 'show');
 					AJAX('POST [url]api/products/import/', items, function(response) {
 						SETTER('loading', 'hide', 5000);
-						SETTER('snackbar', 'success', '@(L\'importation des produits a démarré. <b>Veuillez patienter...</b>.)');
+						SETTER('snackbar', 'success', '@(L&#39;importation des produits a démarré. <b>Veuillez patienter...</b>.)');
 						setTimeout(ctrl.refresh, 5000);
 					});
 				}

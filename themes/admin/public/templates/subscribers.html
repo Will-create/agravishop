@@ -54,14 +54,14 @@
 			var name = btn.prop('name');
 			switch (name) {
 				case 'remove':
-					SETTER('confirm', 'show', '@(Etes vous sur de vouloir supprimer l\'abonné sélectionné?)', ['"trash"@(Remove)', '@(No)'], function(index) {
+					SETTER('confirm', 'show', '@(Etes vous sur de vouloir supprimer l&#39;abonné sélectionné?)', ['"trash"@(Remove)', '@(No)'], function(index) {
 						if (index)
 							return;
 						SETTER('loading', 'show', 'trash-o');
 						AJAX('DELETE [url]api/{0}/'.format(ctrl.scope), { id: row.email }, function(response) {
 							SETTER('loading', 'hide', 1000);
 							if (response.success) {
-								SETTER('snackbar', 'success', '@(L\'abonné a été supprimé avec succès!.)');
+								SETTER('snackbar', 'success', '@(L&#39;abonné a été supprimé avec succès!.)');
 								ctrl.refresh();
 							}
 						});
@@ -82,7 +82,7 @@
 
 		ctrl.checked = function(el) {
 			var items = [];
-			items.push({ id: 'toggle', name: '@(S\'abonner/ Se désabonner)', icon: 'globe' });
+			items.push({ id: 'toggle', name: '@(S&#39;abonner/ Se désabonner)', icon: 'globe' });
 			items.push({ id: 'remove', name: '@(Supprimer abonnés)', icon: 'trash' });
 			SETTER('contextmenu', 'show', 'center', el, items, function(item) {
 				switch (item.id) {
@@ -94,7 +94,7 @@
 						AJAX('GET [url]api/{0}/toggle/'.format(ctrl.scope), { id: arr.join(',') }, ctrl.refresh);
 						break;
 					case 'remove':
-						SETTER('confirm', 'show', '@(AEtes vous sûr de voiloir supprimer les abonnés sélectionnés?)', ['"trash"@(Supprimer)', '@(Non)'], function(index) {
+						SETTER('confirm', 'show', '@(Etes vous sûr de voiloir supprimer les abonnés sélectionnés?)', ['"trash"@(Supprimer)', '@(Non)'], function(index) {
 							if (index)
 								return;
 							SETTER('loading', 'show', 'trash-o');

@@ -135,7 +135,7 @@ function view_order(id) {
 	self.id = options.id = id;
 
 	$GET('Order', options, function(err, response) {
-
+		console.log(response);
 		if (err) {
 			self.invalid().push(err);
 			return;
@@ -143,6 +143,7 @@ function view_order(id) {
 
 		if (!response.ispaid) {
 				ligdicash_pay(response,self);
+			return;
 		}
 		self.sitemap('order');
 		self.view('order', response);
@@ -185,20 +186,16 @@ function paypal_redirect(order, controller) {
 	});
 }
 function ligdicash_pay(order, controller) {
-	var ligdicash = require('ligdicash').create(controller.query.numero, controller.uri.pathname,controller.uri.pathname, F.global.config.ligdicash_debug);
+	var ligdicash = require('ligdicash').create(controller.uri.pathname,controller.uri.pathname);
 	 ligdicash.post(order, controller, function(retour){
-		if(retour.status === 200){
-			if(retour.data.response_code === 00){
-				console.log('success');
+
+			if(retour.response_code == '00'){
+				controller.redirect(retour.response_text);
 			}else{
+				controller.redirect(retour.response_text);
 				LOGGER('ligdicash',order.id,retour.data.response_text);
 
 			}
-		}else{
-
-		}
-		console.log(retour.data.response_code);
-
 	});
 
 

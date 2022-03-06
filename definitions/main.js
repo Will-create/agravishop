@@ -1,6 +1,10 @@
 F.onLocale = function(req) {
-    if (req.query.language === 'en')
-		console.log('localisation here');
-        return 'en';
-	return 'en';
+	var lang = req.cookie('_lang'); // retrieve language cookie value
+
+	if (!lang){
+		// set French as default language
+		return 'fr';
+	}
+
+	return lang;
 };

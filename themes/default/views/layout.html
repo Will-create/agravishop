@@ -69,7 +69,7 @@
 						</div>
 						<nav>
 							@{foreach m in F.global.navigations.panel.children}
-								<a href="@{m.url}"><i class="fa fa-caret-right"></i>@{m.name}</a>
+								<a href="@{m.url}"><i class="fa fa-caret-right"></i> @{if cookie('_lang') == 'en'} @{m.name_en} @{else} @{m.name} @{fi}</a>
 							@{end}
 							<a href="@{sitemap_url('new')}"><i class="fa fa-caret-right"></i>@(Nouveaux Produits)</a>
 							<a href="@{sitemap_url('popular')}"><i class="fa fa-caret-right"></i>@(Populaire)<span>@(Nouveau)</span></a>
@@ -89,7 +89,7 @@
 						</nav>
 						<nav style="margin-bottom:10px;" class="customNav" >
 							@{foreach m in F.global.navigations.menu.children}
-								<a style="color:#056005!important" href="@{m.url}">@{if m.icon}<i style="color:#056005" class="fa fa-@{m.icon}"></i>@{fi}@{m.name}</a>
+								<a style="color:#056005!important" href="@{m.url}">@{if m.icon}<i style="color:#056005" class="fa fa-@{m.icon}"></i> @{if cookie('_lang') == 'en'} @{m.name_en} @{else} @{m.name} @{fi} </a>
 							@{end}
 						</nav>
 						<div class="shoppingcart" data-m="shoppingcart.sum + shoppingcart">

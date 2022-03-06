@@ -1,8 +1,11 @@
 exports.install = function() {
 
-	GROUP(['#middleware1', '#middleware2'], function() {
+	GROUP(['#middleware1'], function() {
    			ROUTE('/*', view_cms);
     });
+
+	ROUTE('/language/fr/',set_french)
+	ROUTE('/language/en/',set_english)
 
 	// Posts
 	ROUTE('#posts', view_posts, ['*Post']);
@@ -13,6 +16,23 @@ exports.install = function() {
 function view_cms() {
 	var self = this;
 	self.CMSpage();
+}
+
+// this controller sets the user language to french
+function set_french(){
+	var self = this;
+	console.log('Set language to french');
+	self.res.cookie('_lang','fr','5 days');
+	this.redirect('/');
+}
+
+// this controller sets the user language to english
+function set_english(){
+	var self = this;
+	console.log('set the user language to english');
+	self.cookie('_lang','en','5 days');
+	this.redirect('/');
+
 }
 
 function view_posts() {

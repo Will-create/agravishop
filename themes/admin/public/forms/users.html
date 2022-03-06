@@ -1,4 +1,4 @@
-<div data-jc="form" data-jc-path="common.form" data-jc-id="users.form" data-jc-config="icon:user;if:users-form;title:@(Modifier l'utilisateur);width:900;reload:Users/formShow;submit:Users/formSubmit;autofocus:true" data-jc-controlller="Users">
+<div data-jc="form" data-jc-path="common.form" data-jc-id="users.form" data-jc-config="icon:user;if:users-form;title:@(Modifier l&#39;utilisateur);width:900;reload:Users/formShow;submit:Users/formSubmit;autofocus:true" data-jc-controlller="Users">
 	<div class="padding">
 		<div class="row">
 			<div class="col-md-3 m">
@@ -92,7 +92,7 @@
 			AJAX('POST [url]api/{0}/'.format(ctrl.scope), data, function(response) {
 				SETTER('loading', 'hide', 1000);
 				if (response.success) {
-					SETTER('snackbar', 'success', '@(L\'utilisateur a été enrégistré avec succès.)');
+					SETTER('snackbar', 'success', '@(L&#39;utilisateur a été enrégistré avec succès.)');
 					com.hide();
 					ctrl.refresh();
 				}

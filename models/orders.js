@@ -27,8 +27,8 @@ NEWSCHEMA('Order').make(function(schema) {
 	schema.define('number', 'String(10)');
 	schema.define('status', 'String(100)');
 	schema.define('statushistory', '[OrderStatus]');
-	schema.define('delivery', 'String(50)', true);
-	schema.define('payment', 'String(50)', true);
+	schema.define('delivery', 'String(50)');
+	schema.define('payment', 'String(50)');
 	schema.define('firstname', 'Capitalize(40)', true);
 	schema.define('lastname', 'Capitalize(40)', true);
 	schema.define('email', 'Email', true);
@@ -51,7 +51,6 @@ NEWSCHEMA('Order').make(function(schema) {
 	schema.define('billingzip', 'String(20)');
 	schema.define('billingcity', 'String(50)');
 	schema.define('billingcountry', 'String(50)');
-
 	schema.define('deliveryfirstname', 'String(50)');
 	schema.define('deliverylastname', 'String(50)');
 	schema.define('deliverystreet', 'String(50)');
@@ -59,7 +58,6 @@ NEWSCHEMA('Order').make(function(schema) {
 	schema.define('deliverycity', 'String(50)');
 	schema.define('deliverycountry', 'String(50)');
 	schema.define('deliveryphone', 'Phone');
-
 	schema.define('iscompany', Boolean);
 	schema.define('isfinished', Boolean);
 	schema.define('isemail', Boolean);              // internal

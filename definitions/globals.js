@@ -11,32 +11,38 @@ $WORKFLOW('Settings', 'load');
 
 $WORKFLOW('Page', 'fix');
 
-
 MIDDLEWARE('middleware1', function($) {
-	if($.req.split[$.req.split.length -1] == 'en'){
-		console.log('English page is requested',$.req.host);
-		CLIENTS[$.ip] = {language : 'en'};
-		$.next();
-	}else{
-	if($.req.language == 'en'){
-		var url = $.controller.url;
-		CLIENTS[$.ip] = {language : 'en'};
-		//$.controller.plain(split);
-		$.controller.redirect(url == '/' ?'/en' : url+'en' );
-		return;
-	}else{
-		CLIENTS[$.ip] = {language : 'fr'};
-		return;
-
-		$.next();
+  var cookie = $.req.cookie('_lang');
+  if (!cookie){
+    $.next();
+	  return;
 	}
 
+  if(cookie == 'en'){
+    var url = $.controller.url;
+    //$.controller.plain(split);
+    if($.req.split[$.req.split.length -1] != 'en'){
+    $.controller.redirect(url == '/' ?'/en' : url+'en' );
+    return;
+    }
+    $.next();
+  }else{
 
-	}
+    $.next();
+  }
+
+
     // or
     // $.next(false);
 
 });
 ON('controller',function($){
-		CLIENTS[$.ip] = {language : $.req.language};
+	var self = $;
+	PREF.language = self.req.language;
+	var cookie = self.cookie('_lang');
+	console.log('This user '+ self.ip +' has heen given a cookie _lang : '+cookie );
+	if (!cookie){
+		self.cookie('_lang',$.req.language,'5 days');
+
+	}
 });

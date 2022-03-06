@@ -21,14 +21,14 @@
 
 	@{json(user, 'userprofile', (k,v) => k === 'password' ? undefined : v)}
 
-	<div data-jc="calendar" data-jc-config="days:@(DIM,LUN,MAR,MER,JEU,VEN,SAM);months:@(Janvier,Février,Mars,Avril,Mai,Juin,Juillet,Août,Septembre,Octobre,Novembre,Décembre);today:@(Régler la date à aujourd'hui);firstday:0"></div>
+	<div data-jc="calendar" data-jc-config="days:@(DIM,LUN,MAR,MER,JEU,VEN,SAM);months:@(Janvier,Février,Mars,Avril,Mai,Juin,Juillet,Août,Septembre,Octobre,Novembre,Décembre);today:@(Régler la date à aujourd&#39;hui);firstday:0"></div>
 	<div data-jc="confirm"></div>
 	<div data-jc="contextmenu"></div>
 	<div data-jc="loading" class="hidden"></div>
 	<div data-jc="snackbar" data-jc-config="button:@(Fermer);timeout:4500"></div>
 	<div data-jc="suggestion" data-jc-config="placeholder:@(Rechercher)"></div>
 	<div data-jc="mainprogress" data-jc-path="common.progress"></div>
-	<div data-jc="websocket" data-jc-config="reconnect:5000;url:ws//31.207.39.183:8001/admin/live/"></div>
+	<div data-jc="websocket" data-jc-config="reconnect:5000;url:/admin/live/"></div>
 	<div data-jc="shortcuts"></div>
 	<div data-jc="features" data-jc-config="placeholder:@(Rechercher...)"></div>
 	<div data-jc="autocomplete"></div>
@@ -144,26 +144,26 @@
 			if (minutes <= 1) {
 				var seconds = (diff / 1000) >> 0;
 				if (seconds < 60)
-					return @('Il y\'a' + '  '+ seconds + ' ' + Tangular.helpers.pluralize(seconds >> 0, 'secondes', 'seconde', 'secondes', 'secondes'));
+					return @('Il y&#39;a' + '  '+ seconds + ' ' + Tangular.helpers.pluralize(seconds >> 0, 'secondes', 'seconde', 'secondes', 'secondes'));
 			}
 
 			if (minutes < 60)
-				return minutes < 3 ? '@(now)' : @('Il y\'a' + '  '+ minutes + ' minutes');
+				return minutes < 3 ? '@(Maintenant)' : @('Il y&#39;a' + '  '+ minutes + ' minutes');
 
 			var hours = (minutes / 60) >> 0;
 			if (hours < 24)
-				return @('Il y\'a' + '  '+ hours + ' ' + Tangular.helpers.pluralize(hours, 'heures', 'heure', 'houres', 'houres'));
+				return @('Il y&#39;a' + '  '+ hours + ' ' + Tangular.helpers.pluralize(hours, 'heures', 'heure', 'houres', 'houres'));
 
 			var days = (hours / 24) >> 0;
 			if (days < 30)
-				return @('Il y\'a' + '  '+ days + ' ' + Tangular.helpers.pluralize(days, 'jours', 'jours', 'jours', 'jours'));
+				return @('Il y&#39;a' + '  '+ days + ' ' + Tangular.helpers.pluralize(days, 'jours', 'jours', 'jours', 'jours'));
 
 			var months = (days / 29) >> 0;
 			if (months < 12)
-				return @('Il y\'a' + '  '+ months + ' ' + Tangular.helpers.pluralize(months, 'mois', 'mois', 'mois', 'mois'));
+				return @('Il y&#39;a' + '  '+ months + ' ' + Tangular.helpers.pluralize(months, 'mois', 'mois', 'mois', 'mois'));
 
 			var years = (months / 12) >> 0;
-			return @('Il y\'a' + '  '+ years + ' ' + Tangular.helpers.pluralize(years, 'années', 'année', 'années', 'années'));
+			return @('Il y&#39;a' + '  '+ years + ' ' + Tangular.helpers.pluralize(years, 'années', 'année', 'années', 'années'));
 		});
 
 		ON('message', function(message) {
@@ -208,7 +208,7 @@
 					msg = t.format('@(Importation terminée)', '@(Importés: {0}x produits)'.format(item.message));
 					break;
 				case 'newsletters.save':
-					msg = t.format('@(Nesletter envoyé)', item.message);
+					msg = t.format('@(Newsletter envoyé)', item.message);
 					break;
 				case 'newsletters.percentage':
 					msg = t.format('@(Envoie de la newsletter en cours)', '@(Envoyé: {0}%)'.format(item.message));
@@ -257,13 +257,13 @@
 					msg = t.format('@(Le compté a été mis à jours)', item.message);
 					break;
 				case 'users.login':
-					msg = t.format('@(L\'utilisateur a été enregistré)', item.message);
+					msg = t.format('@(L&#39;utilisateur a été enregistré)', item.message);
 					break;
 				case 'admin.login':
-					msg = t.format('@(L\'adminitrateur a été enregistré)', item.message);
+					msg = t.format('@(L&#39;adminitrateur a été enregistré)', item.message);
 					break;
 				case 'settings.save':
-					msg = '@(Les paramètres ont été mis àà jours avec succès!.)';
+					msg = '@(Les paramètres ont été mis à jours avec succès!.)';
 					break;
 			}
 
