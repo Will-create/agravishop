@@ -11,14 +11,11 @@
 	<link rel="stylesheet" href="@{global.css}" />
 	<script src="//cdn.componentator.com/spa.min@14.js"></script>
 	@{import('meta', 'head', 'default.css', 'default.js', 'favicon.ico')}
-
-	<link rel="stylesheet" href="http://agraviburkina.com:8004/ionic/css/ionicons.min.css" />
-
 	<script>var LOGGED = +'@{if user}1@{else}0@{fi}';</script>
 </head>
 <body data-jc="exec,binder,modificator">
-	<style>
-		.bg-orange{background-color: #056005; color:white;padding-top: 1em;}
+<style>
+		.bg-orange{background-color: #01de03; color:#056005;padding-top: 1em;}
 		.bg-red{background-color: red; color:white;padding-top: 1em;}
 
 		@keyframes clignote {
@@ -34,24 +31,146 @@
 				padding-bottom: 3px;
 				border: 1px solid #DDD;
 				}
+* {
+    box-sizing: border-box;
+}
 
+a {
+    text-decoration: none;
+}
+
+.header {
+
+    background-color: #f2f2f2;
+    height: 60px;
+    padding: 10px 0;
+
+}
+
+.nav {
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logotop {
+    width: 60px;
+}
+
+.logotop img {
+    width: 60px;
+
+}
+
+.lang-menu {
+    width: 100px;
+    text-align: right;
+    font-weight: bold;
+    margin-top: 25px;
+    position: relative;
+	z-index : 999999999;
+}
+.lang-menu .selected-lang {
+    display: flex;
+    justify-content: space-between;
+    line-height: 2;
+    cursor: pointer;
+}
+.lang-menu .selected-lang:before {
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-image: url(https://www.countryflags.io/us/flat/32.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.lang-menu ul {
+    margin: 0;
+    padding: 0;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #f8f8f8;
+    top: 25px;
+    right: 0px;
+    width: 125px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+}
+
+
+.lang-menu ul li {
+    list-style: none;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lang-menu ul li a {
+    text-decoration: none;
+    width: 125px;
+    padding: 5px 10px;
+    display: block;
+}
+
+.lang-menu ul li:hover {
+    background-color: #f2f2f2;
+}
+
+.lang-menu ul li a:before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.de:before {
+    background-image: url(https://www.countryflags.io/de/flat/32.png);
+}
+
+.en:before {
+    background-image: url(https://www.countryflags.io/us/flat/32.png);
+}
+.fr:before {
+    background-image: url(https://www.countryflags.io/fr/flat/32.png);
+}
+
+.ar:before {
+    background-image: url(https://www.countryflags.io/ae/flat/32.png);
+}
+
+
+.lang-menu:hover ul {
+    display: block;
+}
 	</style>
 	<br />
 	<div data-jc="loading" class="ui-loading@{if !repository.loading} hidden@{fi}"></div>
 	<div data-jc="shoppingcart" data-jc-path="shoppingcart" data-jc-config="discount:@{if user}@{user.discount}@{else}0@{fi}"></div>
-	<div data-jc="message" data-jc-config="button:@(Fermer)"></div>
+	<div data-jc="message" data-jc-config="button:@{if !PREF.language  == 'fr'} Close @{else} @(Fermer) @{fi} "></div>
 	<div data-jc="autocomplete"></div>
 	<div class="container">
+
 		<div class="relative">
 			<div class="account">
+
 				@{if user}
-					<a style="text-decoration: none;  color : white;position:relative; top:10px" href="@{sitemap_url('account')}" class="b">@{user.name}</a>
-					<a style="text-decoration: none;  color : white;position:relative; top:10px" href="@{sitemap_url('settings')}"><i class="fa fa-cog"></i>@(Paramètres)</a>
-					<a style="text-decoration: none;  color : white;position:relative; top:10px" href="@{sitemap_url('logoff')}"><i class="fa fa-sign-out"></i>@(Déconnexion)</a>
+					<a style="color:#056005" href="@{sitemap_url('account')}" class="b">@{user.name}</a>
+					<a style="color:#056005" href="@{sitemap_url('settings')}"><i class="fa fa-cog"></i>@(Paramètres)</a>
+					<a style="color:#056005" href="@{sitemap_url('logoff')}"><i class="fa fa-sign-out"></i>@(Déconnexion)</a>
 				@{else}
-					<a style="text-decoration: none;  color : white;position:relative; top:10px" href="@{sitemap_url('account')}"><i class="fa fa-lock"></i>@(Connexion)</a>
+					<a style="color:#056005" href="@{sitemap_url('account')}"><i class="fa fa-lock"></i>@(Connexion)</a>
+
 				@{fi}
+
 			</div>
+
 		</div>
 		<div class="row">
 			<div class="col-md-3">
@@ -66,15 +185,13 @@
 						</div>
 						@{view('partials/categories')}
 						<div class="categoriesbody npb">
-							<div class="caption">@(RECOMMANDÉS)</div>
+							<div class="caption">@(AGRAVI BURKINA)</div>
 						</div>
 						<nav>
 							@{foreach m in F.global.navigations.panel.children}
-								<a href="@{m.url}"><i class="fa fa-caret-right"></i>@{m.name}</a>
+								<a href="@{m.url}"><i class="fa fa-caret-right"></i> @{if cookie('_lang') == 'en'} @{m.name_en} @{else} @{m.name} @{fi}</a>
 							@{end}
-							<a href="#"><i class="ion ion-ios-chatbubble-outline"></i>********</a>
 							<a href="@{sitemap_url('new')}"><i class="fa fa-caret-right"></i>@(Nouveaux Produits)</a>
-							<a href="@{sitemap_url('top')}"><i class="fa fa-caret-right"></i>@(Produits TOP à la mode)</a>
 							<a href="@{sitemap_url('popular')}"><i class="fa fa-caret-right"></i>@(Populaire)<span>@(Nouveau)</span></a>
 							<a href="@{sitemap_url('category')}"><i class="fa fa-caret-right"></i>@(Tous les produits)</a>
 						</nav>
@@ -87,23 +204,23 @@
 				<section class="body">
 
 					<header>
-						<nav class="customNav" >
-							@{foreach m in F.global.navigations.menu.children}
-								<a href="@{m.url}">@{if m.icon}<i class="fa fa-@{m.icon}"></i>@{fi}@{m.name}</a>
-							@{end}
-						</nav>
-						<nav style="background-color: #2D2D2D!important;height:1px!important;margin-bottom:10px;" class="customNav2" >
+						<nav style="background-color: #056005!important;height:1px!important;" class="customNav2" >
 
 						</nav>
+						<nav style="margin-bottom:10px;" class="customNav" >
+							@{foreach m in F.global.navigations.menu.children}
+								<a style="color:#056005!important" href="@{m.url}">@{if m.icon}<i style="color:#056005" class="fa fa-@{m.icon}"></i>@{fi} @{if cookie('_lang') == 'en'} @{m.name_en} @{else} @{m.name} @{fi} </a>
+							@{end}
+						</nav>
 						<div class="shoppingcart" data-m="shoppingcart.sum + shoppingcart">
-							<a href="@{sitemap_url('checkout')}"><b data-b="shoppingcart.sum" data-b-html="'@{global.config.currency_entity}'.format(value ? value.format(2) : (0).format(2))">...</b><span>@(Votre panier)</span></a>
+							<a href="@{sitemap_url('checkout')}"><b data-b="shoppingcart.sum" data-b-html="'@{global.config.currency_entity}'.format(value ? value : 0)">...</b><span>@(Votre panier)</span></a>
 						</div>
 						<form class="search" action="@{sitemap_url('category')}" method="get">
 							<button><i class="fa fa-search"></i></button>
 							<div><input type="text" placeholder="@(Rechercher...)" name="q" value="@{query.q}" id="search" autocomplete="off" /></div>
 						</form>
-					</header>
 
+					</header>
 					<nav class="breadcrumb mt2">
 						@{foreach m in sitemap()}
 							@{if m.id === 'category'}
@@ -120,9 +237,7 @@
 	</div>
 	<br />
 	<br />
-
 	<script src="@{global.js}"></script>
-
 </body>
 </html>
 

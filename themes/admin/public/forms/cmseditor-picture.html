@@ -1,4 +1,4 @@
-<div data-jc="form" data-jc-path="cmseditor.form" class="hidden" data-jc-config="icon:picture-o;if:picture;title:@(Modifier l'image);width:900;submit:cmseditor_crop_submit">
+<div data-jc="form" data-jc-path="cmseditor.form" class="hidden" data-jc-config="icon:picture-o;if:picture;title:@(Modifier l&#39;image);width:900;submit:cmseditor_crop_submit">
 	<div class="padding">
 		<div data-jc="crop" data-jc-path="cmseditor.crop.url" data-jc-id="cmseditor.crop" data-jc-config="width:200;height:100"></div>
 	</div>
@@ -35,7 +35,6 @@
 		target.attr('alt', cmseditor.crop.alt);
 		cmseditor.crop.href && target.parent('a').attr('href', cmseditor.crop.href);
 		editor.change(true);
-
 		// Is the picture changed?
 		if (cropper.dirty()) {
 			com.hide();

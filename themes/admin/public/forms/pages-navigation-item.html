@@ -6,10 +6,14 @@
 	<hr class="nmt" />
 	<div class="padding npt npb">
 		<div class="row">
-			<div class="col-md-6 m">
+			<div class="col-md-4 m">
 				<div data-jc="textbox" data-jc-config="required:true;maxlength:50" data-jc-path="pages.navigationitem.name">@(Nom)</div>
 			</div>
-			<div class="col-md-6 m">
+			<div class="col-md-4 m">
+				<div data-jc="textbox" data-jc-config="required:true;maxlength:50" data-jc-path="pages.navigationitem.name_en">@(Nom Anglais)</div>
+
+			</div>
+			<div class="col-md-4 m">
 				<div data-jc="textbox" data-jc-config="maxlength:100" data-jc-path="pages.navigationitem.title">@(Tooltip)</div>
 			</div>
 		</div>
@@ -18,7 +22,7 @@
 		<br />
 		<div class="row">
 			<div class="col-md-6 m">
-				<div data-jc="dropdown" data-jc-path="pages.navigationitem.target" data-jc-config="items:@(L'onglet ou la fenêtre courante)|_self,@(Un nouvel onglet ou une nouvelle fenêtre)|_blank;required:true" data-jc-value="'_self'">@(Target)</div>
+				<div data-jc="dropdown" data-jc-path="pages.navigationitem.target" data-jc-config="items:@(L&#39;onglet ou la fenêtre courante)|_self,@(Un nouvel onglet ou une nouvelle fenêtre)|_blank;required:true" data-jc-value="'_self'">@(Cible)</div>
 			</div>
 			<div class="col-md-6 m">
 				<div data-jc="dropdown" data-jc-path="pages.navigationitem.behaviour" data-jc-config="items:@(Par défaut)|default,@(Mise en exergue)|highlight,@(Info)|info,@(Avertissement)|warn,@(Spécial)|special" data-jc-value="'default'">@(Comportement)</div>

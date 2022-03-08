@@ -57,14 +57,14 @@
 			var name = btn.prop('name');
 			switch (name) {
 				case 'remove':
-					SETTER('confirm', 'show', '@(Etes vous sûr de vouloir supprimer l\'utilisateur sélectionné?)', ['"trash"@(Supprimer)', '@(Non)'], function(index) {
+					SETTER('confirm', 'show', '@(Etes vous sûr de vouloir supprimer l&#39;utilisateur sélectionné?)', ['"trash"@(Supprimer)', '@(Non)'], function(index) {
 						if (index)
 							return;
 						SETTER('loading', 'show');
 						AJAX('DELETE [url]api/{0}/'.format(ctrl.scope), row, function(response) {
 							SETTER('loading', 'hide', 1000);
 							if (response.success) {
-								SETTER('snackbar', 'success', '@(L\'utilisateur a été supprimer avec succès.)');
+								SETTER('snackbar', 'success', '@(L&#39;utilisateur a été supprimer avec succès.)');
 								ctrl.refresh();
 							}
 						});

@@ -13,7 +13,6 @@ body  a { text-decoration: none!important;color :#056005;}
 .wnowrap { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
 .right { text-align: right; }
 .center { text-align: center; }
-
 header { height: 100px; }
 header nav { display: block; }
 header nav a { font-size: 14px; font-family: $font; margin-left: 20px; font-weight: bold; }
@@ -21,12 +20,13 @@ header nav a:hover { text-decoration: none; color: #2D2D2D; }
 header nav a:first-child { margin-left: 0; }
 header nav .fa { margin-right: 5px; }
 .relative { position: relative; }
-
 .account { position: absolute; font-size: 12px; border-radius: 3px; margin: 3px 0 0 0; right: 20px; z-index: 3; }
 .account .fa { margin-right: 5px; }
-.account a { text-decoration: none; margin-left: 10px; border-left: 1px solid #D0D0D0; padding-left: 10px; }
+.account a { text-decoration: none;  color : #056005;position:relative; top:18px; margin-bottom:5px }
 .account a:first-child { border-left: 0; margin-left: 0; padding-left: 0; }
-
+.account div { position: relative; font-size: 12px; border-radius: 3px; margin: 3px 0 0 0; right: 20px;width:auto;}
+.account div a { text-decoration: none;  color : #056005;position:relative; top:18px; margin-bottom:5px }
+.account div a:first-child { border-left: 0; margin-left: 0; padding-left: 0; }
 .categories { background-color: white; border-radius: 3px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); padding: 0 0 5px; }
 .categories button { width: 120px; margin: 0 auto; display: none; background-color: white; outline: 0; border: 0; border-top: 2px solid #2D2D2D; height: 30px; }
 .categoriesbody { padding: 15px 15px; }
@@ -42,9 +42,9 @@ header nav .fa { margin-right: 5px; }
 .categoriescontainer nav a.selected { font-weight: bold; color: #2D2D2D; }
 .categoriescontainer a span { padding: 1px 3px; border-radius: 2px; position: relative; display: inline-block; font-size: 10px; color: white; background-color: #D63B32; vertical-align: top; padding: auto; margin-left: 5px; line-height: 10px; font-weight: bold; }
 .categoriesvisible { display: block !important; }
-.customNav2 { color :white; background-color: #056005;  padding: 4px;}
-.customNav { color :white; background-color: #056005;  padding: 10px 10px;}
-.customNav a { text-decoration: none; color:white!important; font-family: monospace!important;}
+.customNav2 { color :#056005!important; background-color: #01de03;  padding: 4px;}
+.customNav { color :#056005!important; background-color: #01de03;  padding: 10px 10px;}
+.customNav a { text-decoration: none; font-family: monospace!important;}
 .badge { padding: 1px 3px; border-radius: 2px; position: relative; display: inline-block; font-size: 10px; color: white; background-color: #D63B32; vertical-align: top; margin-left: 5px; line-height: 10px; font-weight: bold; }
 .badge-green { background-color: #68B25B; }
 .badge-blue { background-color: #5186ED; }
@@ -97,8 +97,8 @@ hr.darker { border-color: #E0E0E0; }
 .link { display: block; }
 .link .fa { margin-right: 5px; }
 
-h1 { margin: 0 0 20px; padding: 0; font-family: $font; font-size: 30px; color: #2D2D2D; font-weight: 700; line-height: 34px; }
-h2 { margin: 0 0 15px; padding: 0; font-family: $font; font-size: 22px; color: #2D2D2D; font-weight: 700; line-height: 24px; }
+h1 { margin: 0 0 20px; padding: 0; font-family: $font; font-size: 30px; color: #056005; font-weight: 700; line-height: 34px; }
+h2 { margin: 0 0 15px; padding: 0; font-family: $font; font-size: 22px; color: #056005; font-weight: 700; line-height: 24px; }
 h1 .fa, h2 .fa { margin-right: 10px; }
 
 .product { background-color: white; border-radius: 3px; margin-bottom: 20px; box-shadow: 0 5px 10px rgba(0,0,0,0.05); position: relative; }
@@ -226,15 +226,15 @@ h1 .fa, h2 .fa { margin-right: 10px; }
 	header { margin-bottom: 10px; height: auto; }
 	header nav { padding: 10px 0 5px; }
 	header nav a { margin-left: 10px; }
-	.account { margin: 10px 0 0 0; font-size: 11px; left: 15px; top: -20px; }
-	.account a { color: #505050; }
+	.account { margin: 10px 0 0 0; font-size: 11px; left: 15px; top: -10px; }
 	.breadcrumb { display: none; }
 	.search { margin: 0 0 20px; display: block; }
 	.shoppingcart { float: none; margin-bottom: 10px; width: 100%; }
 	.categoriescontainer { display: none; }
 	.categories button { display: block; margin-top: 15px; }
-	.customNav2 { display: none; margin-bottom: 10px;}
+	.customNav2 {  display: none; margin-bottom: 10px;}
 	.customNav {  margin-bottom: 10px;}
+	.customNav a  i { display: none; font-family: monospace!important;}
 	.detail-prices { box-shadow: none; margin-bottom: 0; }
 	.detail-prices thead { display: none; }
 	.detail-prices th { width: 100%; display: none; }
@@ -243,8 +243,9 @@ h1 .fa, h2 .fa { margin-right: 10px; }
 	.detail-prices td { display: block; width: 100%; }
 	.detail-prices-name { font-weight: bold; background-color: white; border-bottom: 0 !important; }
 	.detail-prices-stock { display: none !important; }
-	.account a { color: #056005!important; }
+	.account a { color: #11c711!important; top : 5px; }
 	.wnowrap { overflow-x: auto; text-overflow: clip; overflow-scrolling: touch; }
+	.account a { text-decoration: none;position:relative; top:-5px; margin-bottom:5px }
 }
 
 .linkbutton { display: block; width: 100%; padding: 20px 0; text-align: center; font-family: $font; font-size: 16px; background-color: white; border-radius: 3px; box-shadow: 0 5px 10px rgba(0,0,0,0.03); color: #2D2D2D; transition: all 0.3s; }
@@ -277,3 +278,12 @@ h1 .fa, h2 .fa { margin-right: 10px; }
 .wlinkbutton{ color: #056005;}
 .wlinkbutton:hover{ color: white; background-color: #056005;}
 .bg-yellow{background-color: white;}
+
+h1 {color:#056005!important}
+
+/*
+^ Styling the drop-down menu for language switcher
+* Auther : Fadi Nouh
+* URL : https://bluebit.dev
+* Repository: https://github.com/bluebits-academy/language-switcher
+*/
