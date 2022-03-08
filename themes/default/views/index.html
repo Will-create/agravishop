@@ -1,6 +1,28 @@
 @{title('AGRAVI Burkina')}
+<div class="row">
 
-<h1 style="color:#056005!important" >@{title}</h1>
+	<h1 style="color:#056005!important" >@{title}</h1>
+  <div class="lang-menu">
+                <div class="selected-lang">
+                    English
+                </div>
+                <ul>
+                    <li>
+                        <a href="#" class="de">German</a>
+                    </li>
+                    <li>
+                        <a href="" class="en">English</a>
+                    </li>
+                    <li>
+                        <a href="" class="fr">French</a>
+                    </li>
+                    <li>
+                        <a href="" class="ar">Arabic</a>
+                    </li>
+                </ul>
+
+            </div>
+</div>
 @{!repository.page.body}
 <br />
 @{view('partials/products', model)}

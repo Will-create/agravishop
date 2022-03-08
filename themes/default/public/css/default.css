@@ -24,7 +24,9 @@ header nav .fa { margin-right: 5px; }
 .account .fa { margin-right: 5px; }
 .account a { text-decoration: none;  color : #056005;position:relative; top:18px; margin-bottom:5px }
 .account a:first-child { border-left: 0; margin-left: 0; padding-left: 0; }
-
+.account div { position: relative; font-size: 12px; border-radius: 3px; margin: 3px 0 0 0; right: 20px;width:auto;}
+.account div a { text-decoration: none;  color : #056005;position:relative; top:18px; margin-bottom:5px }
+.account div a:first-child { border-left: 0; margin-left: 0; padding-left: 0; }
 .categories { background-color: white; border-radius: 3px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); padding: 0 0 5px; }
 .categories button { width: 120px; margin: 0 auto; display: none; background-color: white; outline: 0; border: 0; border-top: 2px solid #2D2D2D; height: 30px; }
 .categoriesbody { padding: 15px 15px; }
@@ -278,3 +280,10 @@ h1 .fa, h2 .fa { margin-right: 10px; }
 .bg-yellow{background-color: white;}
 
 h1 {color:#056005!important}
+
+/*
+^ Styling the drop-down menu for language switcher
+* Auther : Fadi Nouh
+* URL : https://bluebit.dev
+* Repository: https://github.com/bluebits-academy/language-switcher
+*/
