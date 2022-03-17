@@ -25,8 +25,24 @@
 			<div class="key">@(Rémise)</div>
 			<div class="value">@{user.discount.format(0)}%</div>
 		</div>
+		<div class="keyvalue">
+			@{if cookie('_lang') == 'fr'}
+					<div class="key">@(Langue)</div>
+					<div class="value">
+						Francais
+							<a style="color:#056005;margin:5px;" href="/language/en"><i class="fa fa-language"></i> Mettre en Anglais</a>
+					</div>
+					@{else}
+			<div class="key">@(Language)</div>
+					<div class="value">
+						English
+					<a style="color:#056005;margin:5px;" href="/language/fr"><i class="fa fa-language"></i> Set to French</a>
+					</div>
+			@{fi}
+			<div class="key">@(Rémise)</div>
+			<div class="value">@{user.discount.format(0)}%</div>
+		</div>
 		<br />
-
 		<div>
 			<a href="@{sitemap_url('settings')}" class="link"><i class="fa fa-caret-right"></i>@(Mettre à jours le compte)</a>
 			<a href="@{sitemap_url('category')}" class="link"><i class="fa fa-caret-right"></i>@(Parcourir les produits)</a>
@@ -45,7 +61,7 @@
 				<script type="text/html">
 					{{ foreach m in value }}
 						<div class="order">
-							<a href="@{sitemap_url('order', '{{ m.id }}')}" title="@(Voir rendu)"><i class="fa fa-search"></i></a>
+							<a href="@{sitemap_url('ligdicash', '{{ m.id }}')}" title="@(Voir rendu)"><i class="fa fa-search"></i></a>
 							<div class="line">
 								<div class="price">{{ m.price | format(2) }}</div>
 								<div class="name">{{ m.name }}</div>

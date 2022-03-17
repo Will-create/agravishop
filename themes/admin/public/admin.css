@@ -10,7 +10,7 @@ header nav button:hover { background-color: #0c8b0c; }
 header nav button .fa { margin: 0 8px 0 0; font-size: 14px; position: relative; display: inline-block; }
 
 header .user { float: right; font-size: 12px; padding: 12px 20px 0 0; }
-header .user .fa { margin-right: 5px; }
+header .user .fa { margin-right: 5px; color : #fff!important; }
 header .title { height: 40px; color : #fff; border-left: 1px solid #F0F0F0; font-size: 16px; float: left; padding: 8px 0 0 20px; font-weight: bold; }
 header .title .fa { margin-right: 8px; }
 

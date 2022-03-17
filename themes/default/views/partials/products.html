@@ -18,7 +18,8 @@
 			@{fi}
 			@{m.price}
 			<a href="@{m.linker_category}/" class="category"><i class="fa fa-folder-o"></i>@{m.category}</a>
-			<a href="@{m.linker}" class="name">@{m.name}</a>
+			<a href="@{m.linker}" class="name hidden product_name_en">@{m.name_en}</a>
+			<a href="@{m.linker}" class="name hidden product_name">@{m.name}</a>
 			<a href="@{if !url || url === '/'}@{sitemap_url('category')}@{fi}?manufacturer=@{m.linker_manufacturer}" class="manufacturer">@{m.manufacturer}</a>
 			<div class="price">
 				@{if m.stock}

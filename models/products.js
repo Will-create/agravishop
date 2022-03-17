@@ -9,19 +9,20 @@ NEWSCHEMA('ProductPrice').make(function(schema) {
 });
 
 NEWSCHEMA('Product').make(function(schema) {
-
 	schema.define('id', 'UID');
 	schema.define('availability', 'String(40)');
 	schema.define('body', String);
 	schema.define('bodywidgets', '[String(22)]');       // List of all used widgets
 	schema.define('category', 'String(300)', true);
 	schema.define('description', 'String(1000)', true);
+	schema.define('description_en', 'String(1000)', true);
 	schema.define('isnew', Boolean);
 	schema.define('ispublished', Boolean);
 	schema.define('istop', Boolean);
 	schema.define('linker', 'String(50)');
 	schema.define('manufacturer', 'String(50)');
 	schema.define('name', 'String(50)', true);
+	schema.define('name_en', 'String(50)', true);
 	schema.define('pictures', '[String]');
 	schema.define('pictures2', '[String]');
 	schema.define('prices', '[ProductPrice]', true);
@@ -47,6 +48,7 @@ NEWSCHEMA('Product').make(function(schema) {
 
 		if (isAdmin) {
 			opt.name && filter.adminFilter('name', opt, String);
+			opt.name_en && filter.adminFilter('name_en', opt, String);
 			opt.category && filter.adminFilter('category', opt, String);
 			opt.manufacturer && filter.adminFilter('manufacturer', opt, String);
 			opt.stock && filter.adminFilter('stock', opt, Number);
@@ -69,7 +71,7 @@ NEWSCHEMA('Product').make(function(schema) {
 		else
 			filter.sort('datecreated', true);
 
-		filter.fields('id', 'linker', 'linker_category', 'linker_manufacturer', 'category', 'manufacturer', 'name', 'pricemin', 'priceold', 'isnew', 'istop', 'pictures', 'availability', 'datecreated', 'ispublished', 'signals', 'size', 'stock', 'color');
+		filter.fields('id', 'linker', 'linker_category', 'linker_manufacturer', 'category', 'manufacturer', 'name','name_en', 'pricemin', 'priceold', 'isnew', 'istop', 'pictures', 'availability', 'datecreated', 'ispublished', 'signals', 'size', 'stock', 'color');
 		filter.callback(function(err, docs, count) {
 			!isAdmin && prepare_links(docs);
 			$.callback(filter.adminOutput(docs, count));

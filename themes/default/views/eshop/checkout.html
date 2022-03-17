@@ -1,6 +1,14 @@
 @{repository.loading = true}
 
-<h1><i class="fa fa-shopping-cart"></i>Soumission de la commande</h1>
+<h1><i class="fa fa-shopping-cart"></i>
+
+					@{if cookie('_lang') == 'fr'}
+							Soumission de la commande
+
+					@{else}
+						Order submission
+					@{fi}
+</h1>
 
 <div class="hidden" data-b="shoppingcart.items" data-b-visible="!value || !value.length">
 	<br />
@@ -110,9 +118,6 @@
 						<div class="row">
 							<div class="col-md-6 m">
 								<div data-jc="textbox" data-jc-path="order.form.deliverycity" data-jc-config="required:true;maxlength:50">@(Ville)</div>
-							</div>
-							<div class="col-md-3 m">
-								<div data-jc="textbox" data-jc-path="order.form.deliverystreet" data-jc-config="maxlength:50">@(Rue)</div>
 							</div>
 						</div>
 			</div>

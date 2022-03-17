@@ -89,7 +89,7 @@ T1530458676                 : seconds + ' ' + Tangular.helpers.pluralize(seconds
 T-905782333                 : Now
 T-1756080506                : minutes + ' minutes' + ' ago'
 T-669228884                 : hours + ' ' + Tangular.helpers.pluralize(hours, 'hours', 'hour', 'hours', 'hours') + ' ago'
-T-576003353                 : days + ' ' + Tangular.helpers.pluralize(days, 'days', 'day', 'days', 'days') + 'ago'
+T-576003353                 : days + ' ' + Tangular.helpers.pluralize(days, 'days', 'day', 'days', 'days') + ' ago'
 T1298739023                 : months + ' ' + Tangular.helpers.pluralize(months, 'months', 'month', 'months', 'months') + ' ago'
 T1814692472                 : years + ' ' + Tangular.helpers.pluralize(years, 'years', 'year', 'years', 'years') + ' ago'
 T453407099                  : Product added
@@ -330,235 +330,234 @@ T-1172057030                : yyyy-MM-dd HH:mm
 T2071006295                 : Edit
 
 // themes/admin/public/forms/notices.html
-T1263439995                 : Code pin pour cette notice
-T-69172163                  : Vous pouvez programmer la date de la publication.
-T155385212                  : Choisir une catégorie
-T957302991                  : Specifier un nom d&#39;auteur
-T-1973830516                : Evènement
-T2082714586                 : Vous pouvez programmer la date de l&#39;évènement.
-T-223314088                 : Editeur
-T65295849                   : Corps
-T-1584724372                : Vous pouvez saisir le corps en format markdown.
-T459094603                  : Saisir une adresse URL
-T-1369626157                : Vous pouvez spécifier l&#39;adresse url de la cible.
-T-58889221                  : Choisir une icône pour cette notice.
+T1263439995                 : Code pin for this notice
+T-69172163                  :You can schedule the publishment date.
+T155385212                  : Choose a categorie
+T957302991                  : Specify  author name
+T-1973830516                : Event
+T2082714586                 : You can schedule the event date.
+T-223314088                 : Editor
+T65295849                   : Body
+T-1584724372                : You can type the body content in markdown fornat.
+T459094603                  : Enter email addresse
+T-1369626157                : You can specify the URL address of the target.
+T-58889221                  : Choose icone for this notice.
 T-818071154                 : Edit notice
 T-1780802184                : New notice
-T-105742052                 : La notice a été enrégistré avec succès.
+T-105742052                 : The notice is saved successfully.
 
 // themes/admin/public/forms/notices.html, themes/admin/public/forms/posts.html
 T2122702                    : Date
 
 // themes/admin/public/forms/notices.html, themes/admin/public/forms/posts.html, themes/admin/public/forms/products.html
-T-1241074925                : Catégorie
+T-1241074925                : Categorie
 
 // themes/admin/public/forms/notices.html, themes/admin/public/forms/posts.html, themes/admin/public/templates/notices.html, themes/admin/public/templates/posts.html
-T1972503330                 : Auteur
+T1972503330                 : Authot
 
 // themes/admin/public/forms/notices.html, themes/admin/public/forms/pages.html, themes/admin/public/forms/widgets.html, themes/default/views/eshop/account.html
-T-1052046706                : Voir rendu
+T-1052046706                : Preview
 
 // themes/admin/public/forms/notices.html, themes/admin/public/forms/pages-navigation-item.html
-T-1052111052                : Rechercher une icône
+T-1052111052                : Search icon
 
 // themes/admin/public/forms/orders.html
 T2331                       : ID
-T-200866579                 : Date création
-T1625513134                 : Date modification
-T2080624722                 : Envoyé
-T1965875153                 : Annulé
-T2098362375                 : Statut Commande
-T-341520027                 : Note Interne
-T534603779                  : Traité et fermé
-T-1032028105                : Envoyer un mail au client a propos du statut de la commande
-T-1519578789                : numéro personnalisé
-T732558090                  : Rémise %
-T-691943834                 : Information seulement
-T477051251                  : Un message personnalisé pour le client
-T267525893                  : Information du Contact
+T-200866579                 : Creadted date
+T1625513134                 : Modified date
+T2080624722                 : Sent
+T1965875153                 : Cancelled
+T2098362375                 : Order status
+T-341520027                 : Internat note
+T534603779                  : Treated and closed
+T-1032028105                : Send email to client about order status
+T-1519578789                : Custom number
+T732558090                  : % Discount
+T-691943834                 : Information only
+T477051251                  : A custom message for the client
+T267525893                  : Contact informations
 T-1647357781                : Adresse Email
-T761355842                  : Entreprise de factorisation
-T1523037599                 : Numéro TVA
-T-1155064408                : Adresse de livraison et adresse de facturation sont les mêmes
-T-1396120835                : Ville, Quartier
+T761355842                  : Billing company
+T1523037599                 : TVA number
+T-1155064408                : Delivery addresse and billing addresse are same
+T-1396120835                : City
 T-1684223880                : IMPORTANT:
-T1349673062                 : La quantité de produits en stock n&#39;affecte pas la quantité de produits commandés"
-T-1220359909                : Quantité
-T915239065                  : Résumer:
-T-2141943524                : Modifier la commande
-T2118099256                 : Nouvelle commande
-T888614526                  : La commande a été enrégistré avec succès.
-T534597145                  : Entrer un nom de produit
-T453632107                  : Produits envoyés
+T1349673062                 : The quantite of the stock does not affect the number of the order
+T-1220359909                : Quantity
+T915239065                  : Summarize:
+T-2141943524                : Edit order
+T2118099256                 : New order
+T888614526                  : The order is saved sussceefully
+T453632107                  : Sent products
 
 // themes/admin/public/forms/orders.html, themes/admin/public/templates/orders.html, themes/default/views/eshop/order.html
-T-1950366784                : Numéro
-T2480481                    : Payé
+T-1950366784                : Number
+T2480481                    : Paid
 
 // themes/admin/public/forms/orders.html, themes/admin/public/forms/products.html, themes/admin/public/templates/orders.html, themes/default/views/cms/product.html, themes/default/views/eshop/order.html
-T2496209                    : Prix
+T2496209                    : Price
 
 // themes/admin/public/forms/orders.html, themes/default/views/eshop/order.html
-T-564150113                 : Produits commandés
+T-564150113                 : Ordered products
 T-2061496434                : Code de suivi
-T-1127133661                : Adresse de livraison
+T-1127133661                : Delivery address
 
 // themes/admin/public/forms/orders.html, themes/admin/public/forms/users.html, themes/admin/public/templates/dashboard.html, themes/default/views/eshop/order.html
-T-583222696                 : Adresse IP
+T-583222696                 : IP Adress
 
 // themes/admin/public/forms/orders.html, themes/admin/public/templates/orders.html, themes/default/views/eshop/account.html, themes/default/views/eshop/order.html
-T241075288                  : Terminé
+T241075288                  : Finished
 
 // themes/admin/public/forms/orders.html, themes/default/views/eshop/checkout.html, themes/default/views/eshop/order.html, themes/default/views/mails/order.html
-T-908295439                 : Livraison
+T-908295439                 : Delivery
 
 // themes/admin/public/forms/orders.html, themes/default/views/eshop/checkout.html, themes/default/views/eshop/order.html
-T982101451                  : Paiement
-T-528805445                 : Entreprise
+T982101451                  : Payment
+T-528805445                 : Company
 
 // themes/admin/public/forms/orders.html, themes/admin/public/forms/users.html, themes/default/views/eshop/signin.html
-T-958027453                 : Nom de famille
+T-958027453                 : Firstname
 
 // themes/admin/public/forms/orders.html, themes/admin/public/forms/users.html, themes/default/public/widgets/contactform.html, themes/default/views/eshop/checkout.html, themes/default/views/eshop/settings.html, themes/default/views/eshop/signin.html
-T-1892303259                : Prénom
+T-1892303259                : Lastname
 
 // themes/admin/public/forms/orders.html, themes/default/views/eshop/checkout.html
-T348935616                  : ID entreprise
-T82530                      : Rue
+T348935616                  : Compamy ID
+T82530                      : Street
 T88833                      : ZIP
-T2480363                    : Pays
+T2480363                    : Country
 
 // themes/admin/public/forms/orders.html, themes/default/views/cms/product.html
-T-1314376669                : Référence
+T-1314376669                : Refference
 
 // themes/admin/public/forms/orders.html, themes/admin/public/forms/products.html
-T-268870649                 : Ajouter un nouveau produit
+T-268870649                 : Add a new product
 
 // themes/admin/public/forms/pages-globals.html
-T768512457                  : Editer les variables globales
-T1718174023                 : Les variables globales peuvent contenir des valeurs prédéfinies pour le contenu de la page. En d&#39;autres termes: Vous pouvez définir des clés avec le contenu et les utiliser dans les différentes pages.
+T768512457                  : Edit global variables
+T1718174023                 : The global variables can contain predefined values for the page contents. In other words, you can define somes keys/values in global variables to be used in any page.
 T721751679                  : Le système remplace <code>$clé</code> par une valeur dans toutes les pages où elles sont rendues.
 T3060385                    : cléA
 T-823827711                 : valeur
-T3060386                    : cléB
-T-909686434                 : Les Globals ont été enrégistrés avec succès.
+T3060386                    : KeyB
+T-909686434                 : Globals are saved successfully.
 
 // themes/admin/public/forms/pages-globals.html, themes/admin/public/templates/pages.html
-T-319616966                 : Variables globales
+T-319616966                 : Global variables
 
 // themes/admin/public/forms/pages-navigation-item.html, themes/admin/public/forms/pages-navigation.html, themes/admin/public/templates/pages.html
 T-438835660                 : Navigation
 
 // themes/admin/public/forms/pages-navigation-item.html
 T932731472                  : URL according to the sitemap
-T-612931196                 : CMS synchronisera toutes les informations automatiquement en fonction des paramètres de la page.
-T-1764259675                : Nom Anglais
-T-89670227                  : L&#39;onglet ou la fenêtre courante
-T-1017742145                : Un nouvel onglet ou une nouvelle fenêtre
-T462858142                  : Par défaut
-T962965106                  : Mise en exergue
+T-612931196                 : CMS will sync all information automatically based on page settings.
+T-1764259675                : English Name
+T-89670227                  : The current tab or window
+T-1017742145                : A new tab or window
+T462858142                  : By default
+T962965106                  : Highlighted
 T2283726                    : Info
-T-102775988                 : Avertissement
-T-221907171                 : Spécial
-T-658841823                 : Comportement
+T-102775988                 : Warning
+T-221907171                 : Special
+T-658841823                 : Behavior
 
 // themes/admin/public/forms/pages-navigation.html
-T50162569                   : Ajouter Nouveau
-T-1080978542                : Tout éffacer
-T1338688209                 : Aucun Produit
+T50162569                   : Add new
+T-1080978542                : Clear all
+T1338688209                 : No roduct
 T1590288280                 : Edit navigation: {0}
 
 // themes/admin/public/forms/pages.html, themes/admin/public/forms/products.html
-T487497620                  : Accueil
+T487497620                  : Home
 
 // themes/admin/public/forms/pages.html
-T-2110000030                : Ceci est un contenu partiel
-T2020924419                 : URL relatif de la page
+T-2110000030                : This is partial content
+T2020924419                 : Relative URL of the page
 T-1911556918                : Parent
-T-459006610                 : Cela affecte le sitemap et la structure.
-T-1453369805                : Enregistrer le contenu
-T80818930                   : Titre
-T-1119467399                : Titre meta, maximum 60 caractères.
-T1639556050                 : Mots clés
-T2033083676                 : Mots clés meta, maximum 6 mots.
-T997510378                  : Description meta, maximum 120 caractères.
-T1418348867                 : Signaux sont susceptibles de déclancher des actions spéciales lors du chargement de la page.
-T1482963945                 : Ne contient aucune page partielle.
+T-459006610                 : This affects the sitemap and the structure.
+T-1453369805                : Save content
+T80818930                   : Title
+T-1119467399                : Title meta, maximum 60 chars.
+T1639556050                 : Keywords
+T2033083676                 : Keywords meta, maximum 6 words.
+T997510378                  : Meta description, maximum 120 characters.
+T1418348867                 : Signals are likely to trigger special actions when loading the page.
+T1482963945                 : Contains no partial pages.
 T-1854478376                : Les pages partielles nichées.
-T-336412222                 : Joindre d&#39;autres pages partielles à celle-là.
+T-336412222                 : Attach other partial pages to that one.
 T1514775450                 : Ne contient aucune navigation.
-T-743397073                 : Sidebar de navigation
-T145658241                  : Ajouter une sidebar de navigation.
-T-220566834                 : Paramètres pour les navigations
-T1583688617                 : Remplacer l&#39;icône dans toutes les navigations
-T1332244959                 : Remplacer le nom dans toutes les navigations
-T912207139                  : Remplacer l&#39;ancienne adresse URL dans tout le contenu
-T-16696038                  : Choisir une icône
+T-743397073                 : Navigation sidebar
+T145658241                  : Add a navigation sidebar.
+T-220566834                 : Parameters for navigations
+	T1583688617             : Replace icon in all navigations
+T1332244959                 : Replace name in all navigations
+T912207139                  : Replace old URL in all content
+T-16696038                  : Choose an icon
 T55039331                   : Modifier  la Page
-T-105612179                 : Nouvelle Page
-T1408504951                 : La Page a été enregistré avec succès.
+T-105612179                 : New page
+T1408504951                 : The Page has been saved successfully.
 
 // themes/admin/public/forms/pages.html, themes/admin/public/forms/posts.html, themes/default/views/cms/product.html
 T-56677412                  : Description
-
+New page
 // themes/admin/public/forms/pages.html, themes/admin/public/forms/posts.html, themes/admin/public/forms/products.html
-T-858088629                 : Ne contient aucun signal.
-T-542048313                 : Signaux
-T320992877                  : Date_modification
+T-858088629                 : Contains no signal.
+T-542048313                 : Signals
+T320992877                  : Modified_date
 
 // themes/admin/public/forms/pages.html, themes/admin/public/forms/widgets.html
-T-1493179943                : Rechercher des icônes
+T-1493179943                : Search Icons
 
 // themes/admin/public/forms/pages.html, themes/admin/public/forms/posts.html, themes/admin/public/forms/products.html, themes/admin/public/forms/users.html, themes/admin/public/templates/newsletters.html
-T1893619244                 : Date_création
+T1893619244                 : Creation Date
 
 // themes/admin/public/forms/pages.html, themes/admin/public/forms/posts.html
-T1144483596                 : Non modifié
+T1144483596                 : Unmodified
 
 // themes/admin/public/forms/posts.html
-T2130379780                 : C&#39;est déja publié
-T60134315                   : Vous pouvez spécifier la date de publication ici.
-T-890397269                 : Les signaux peuvent déclencher des actions spéciales lors du chargement de la page.
-T1660194526                 : Modifier le Post
+T2130379780                 : It s already published
+T60134315                   : You can specify the publication date here.
+T-890397269                 : Signals can trigger special actions on page load.
+T1660194526                 : Edit Post
 T-1257707671                : Nouveau Post
-T303464768                  : Le Post a été enrégistré avec succès.
+T303464768                  : The Post has been successfully registered.
 
 // themes/admin/public/forms/products-replace.html
-T-989346491                 : Remplacer
-T1628461335                 : Choisir l&#39;ancien nom
-T2037667587                 : Nouveau nom
-T-1380485395                : Catégorie remplacée avec succès.
-T-332119747                 : Le fabricant a été remplacé avec succès.
+T-989346491                 : Remplace
+T1628461335                 : Choose old name
+T2037667587                 : New name
+T-1380485395                : Category replaced successfully.
+T-332119747                 : The manufacturer was successfully replaced.
 
 // themes/admin/public/forms/products.html
-T-977423633                 : publié
-T-1824790376                : au <b>TOP</b>
-T1885890900                 : nouveau sur le marché
-T958943537                  : Choisir une catégorie existante
-T-1860531483                : Catégorie principale / Sous-catégorie 1 / Sous-catégorie 2
+T-977423633                 : published
+T-1824790376                : on <b>TOP</b>
+T1885890900                 : New on the market
+T958943537                  : Choose an existing category
+T-1860531483                : Main category / Subcategory 1 / Subcategory 2
 T-1408468831                : Subcategories are created automatically by splitting / backslash char.
-T-1718627534                : Choisir un fabricant existant
-T-1427010922                : Description Simple
-T1408522997                 : Ancien prix
-T-2110204499                : Référence personnalisée
-T361736666                  : Nom de variant
-T1872181760                 : Entrer ex: taille et couleur
-T-1569384611                : Ajouter des photos
-T1432271018                 : Statisques de toutes les commandes
-T-1269333664                : Modifier Produit
-T1007296064                 : Nouveau Produit
-T-1056000229                : Le Produit a été enrégistré avec succès.
+T-1718627534                : Choose an existing manufacturer
+T-1427010922                : SimpleDescription
+T1408522997                 : Old price
+T-2110204499                : Custom reference
+T361736666                  : Variant name
+T1872181760                 : Enter ex: size and color
+T-1569384611                : Add pictures
+T1432271018                 : Statistics of all orders
+T-1269333664                : Edit Product
+T1007296064                 : New product
+T-1056000229                : The Product has been successfully registered.
 
 // themes/admin/public/forms/products.html, themes/admin/public/templates/products.html, themes/default/views/cms/product.html
-T-274096382                 : Fabricant
+	T-274096382                 : The manufacturer
 
 // themes/admin/public/forms/products.html, themes/default/views/cms/product.html
-T118219690                  : Tailles
-T-138110721                 : En stock
-T-1852223135                : Disponibilité
+T118219690                  : Sizes
+T-138110721                 : In stock
+T-1852223135                : Availablity
 
 // themes/admin/public/forms/products.html, themes/default/views/cms/product.html, themes/default/views/partials/filter.html
-T-309655148                 : Couleurs
+T-309655148                 : Colors
 
 // themes/admin/public/forms/products.html, themes/admin/public/templates/products.html
 T80217846                   : Stock
@@ -566,206 +565,206 @@ T80217846                   : Stock
 // themes/admin/public/forms/settings-admin.html
 T-1383713150                : Nom et Prénom
 T1325156902                 : ex: agaperaston
-T1514806913                 : Générer mot de passe
-T83104760                   : Rôles
-T-214125745                 : Si les rôles de l&#39;utilisateur est vide alors il aura accès à toutes les fonctionalités.
+T1514806913                 : Generate password
+T83104760                   : Roles
+T-214125745                 : If the user's roles is empty then he will have access to all features.
 
 // themes/admin/public/forms/settings-admin.html, themes/admin/public/templates/settings.html
-T1844625339                 : Nom d&#39;utilisateur
+T1844625339                 : Username
 
 // themes/admin/public/forms/subscribers-import.html
-T-443205156                 : Importer des abonnés
-T1373693945                 : Entrer toutes les nouvelles adresses e-mails
-T53560896                   : Adresses email
-T883433579                  : Importation en cours...
-T360258322                  : IMPORTER
+T-443205156                 : Import subscribers
+T1373693945                 : Enter all new email addresses
+T53560896                   : Email addresses
+T883433579                  : Import in progress...
+T360258322                  : IMPORT
 T1494553373                 : Adresses e-mails importés avec succès.
 
 // themes/admin/public/forms/users.html
-T-1762621618                : Modifier l&#39;utilisateur
-T1003912755                 : Statistiques de toutes les connexions depuis 16 mois
-T-1058172584                : Statistiques de toutes les commandes depuis 16 mois
-T-453810810                 : Remise %
-T-968459880                 : feminin
-T588881355                  : Nom de compte
-T-826664006                 : Est bloqué
-T215937955                  : Est confirmé
-T-1188065680                : L&#39;utilisateur a été enrégistré avec succès.
+T-1762621618                : Edit User
+T1003912755                 : Statistics of all connections for 16 months
+T-1058172584                : Statistics of all orders for 16 months
+T-453810810                 : Discount %
+T-968459880                 : Femele
+T588881355                  : Account name
+T-826664006                 : Is Blocked
+T215937955                  : Is Confirmed
+T-1188065680                : The user has been successfully registered.
 
 // themes/admin/public/forms/users.html, themes/admin/public/templates/users.html
-T268682976                  : masculin
+T268682976                  : male
 
 // themes/admin/public/forms/users.html, themes/admin/public/templates/users.html, themes/default/views/eshop/signin.html
-T68688227                   : Genre
+T68688227                   : Gender
 
 // themes/admin/public/forms/users.html, themes/default/views/eshop/signin.html
-T-410986861                 : Informations personnelles
+T-410986861                 : Personnal informations
 
 // themes/admin/public/forms/widgets-globals.html
-T-832447190                 : Editer des styles et scripts globaux
-T128404022                  : Les variables globales peuvent contenir des valeurs pour des styles et des scripts. Les styles supportent auto-vendor-prefixes et des variables de déclaration comme dans les SASS. Chaque contenu sera minifié dans un seul fichier css ou js.
+T-832447190                 : Edit global styles and scripts
+T128404022                  : Global variables can hold values for styles and scripts. Styles support auto-vendor-prefixes and declaration variables like in SASS. Each content will be minified into a single css or js file.
 T-880837472                 : CSS Global
-T-1430598250                : Javascript global
-T627188934                  : Variables Globales enrégistrées avec succès.
+T-1430598250                : Global Javascript
+T627188934                  : Global Variables saved successfully.
 
 // themes/admin/public/forms/widgets-import.html
-T1828686337                 : Télécharger des widgets déja existant
-T-1948550462                : Etes vous sûre de vouloir importer les widgets sélectionnés?
-T1393109493                 : Widget <b>{0}</b> importé avec succès.
+T1828686337                 : Download existing widgets
+T-1948550462                : Are you sure you want to import the selected widgets?
+T1393109493                 : Widget <b>{0}</b> imported successfully.
 
 // themes/admin/public/forms/widgets-import.html, themes/admin/public/templates/subscribers.html
-T-357724366                 : Importer
+T-357724366                 : Import
 
 // themes/admin/public/forms/widgets.html
 T-2025855158                : Layout
-T-558774620                 : Columnes
+T-558774620                 : Columns
 T-1678783398                : Contenu
-T1375586547                 : Linéaire
+T1375586547                 : Linear
 T-1198923559                : Newsletter
-T-1272793149                : Selectionner une catégorie déja existante
-T-515000357                 : Code-source
-T867639981                  : Télécharger des widgets
-T-2122176045                : Model prédéfini
+T-1272793149                : Select an existing category
+T-515000357                 : Source code
+T867639981                  : Download Widgets
+T-2122176045                : Predefined model
 T-1908600166                : Documentation
-T810358392                  : Garder la taille fixe 300x200px
-T-41425011                  : Modifier widget
-T-660722003                 : Nouveau widget
-T-121656642                 : Widget enrégistré avec succès.
+T810358392                  : Keep fixed size 300x200px
+T-41425011                  : Edit Widget
+T-660722003                 : New Widget
+T-121656642                 : Widget registered successfully.
 
 // themes/admin/public/templates/dashboard.html
-T-2097629519                : Nombre total visiteurs:
-T-1339763729                : 'visiteurs', 'visiteur', 'visiteurs', 'visiteurs'
-T-881163122                 : Visiteurs en ligne
-T-1600554436                : Dernier visiteur:
+T-2097629519                : Total number of visitors:
+T-1339763729                : 'visitors', 'visitor', 'visitors', 'visitors'
+T-881163122                 : Online visitors
+T-1600554436                : Last visitor:
 T-1841836183                : Robots
-T1844673786                 : Appareils Téléphones
-T16439587                   : Ordinateurs de bureau
-T2482274                    : Sources Aujourh&#39;ui
-T794260327                  : Depuis les réseaux sociaux
-T411437780                  : Depuis les publicités
-T153011530                  : Depuis la recherche organiques
-T-1953390554                : Visiteurs directs
-T1374990658                 : Depuis une source inconnue
-T-461536910                 : Aujourd&#39;hui
-T2249568                    : Hits
-T-410747236                 : Visiteurs
-T1786624806                 : Visiteurs particuliers par mois
-T-1527971758                : Les pages visitées par utilisateur
+T1844673786                 : Devices Phones
+T16439587                   : Desktop computers
+T2482274                    : Sources Today
+T794260327                  : From social networks
+T411437780                  : From advertisement
+T153011530                  : From organic search
+T-1953390554                : Direct visitors
+T1374990658                 : Direct visitors
+T-461536910                 : Today
+	T2249568                : Hits
+T-410747236                 : Visitors
+T1786624806                 : Individual visitors per month
+T-1527971758                : Pages visited by user
 T2622298                    : Type
-T-1154070767                : Addresse
-T1082121059                 : Utilisateur
-T69618475                   : Heure
-T-237906580                 : +nouveau
-T-1901428289                : Maximum de visiteurs en ligne par jours
-T345822831                  : '# visiteurs', '# visiteur', '# visiteurs', '# visiteurs'
-T-1848705902                : Particulier
-T985401583                  : 'particuliers', 'particulier', 'particuliers', 'particuliers'
-T-1729014144                : 'visiteurs', 'visiteur', 'visitors', 'visiteurs'
-T2001072282                 : Bureau
+T-1154070767                : Address
+T1082121059                 : User
+T69618475                   : Hour
+T-237906580                 : +new
+T-1901428289                : Maximum online visitors per day
+T345822831                  : '# visitors', '# visitor', '# visitors', '# visitors'
+T-1848705902                : Particular
+T985401583                  : 'individuals', 'individual', 'individuals', 'individuals'
+T-1729014144                : 'visitors', 'visitor', 'visitors', 'visitors'
+T2001072282                 : Desktop
 T-1405084744                : Mobile:
-T1903698656                 : Bureau:
-T-1569374014                : Depuis les réseaux sociaux: {{ value.social }}%
+T1903698656                 : Desktop:
+T-1569374014                : From social networks: {{ value.social }}%
 T246274460                  : Social {{ value.social }}%
-T1816376348                 : From publicités: {{ value.advert }}%
-T-710742636                 : Publicités {{ value.advert }}%
-T1701154336                 : Depuis les moteurs de recherches: {{ value.search }}%
-T357114277                  : Recherche {{ value.search }}%
-T-455100449                 : Visiteurs directs: {{ value.direct }}%
+T1816376348                 : From  advertisement : {{ value.advert }}%
+T-710742636                 : Advertising {{ value.advert }}%
+T1701154336                 : From search engines: {{ value.search }}%
+T357114277                  : Search {{ value.search }}%
+T-455100449                 : Direct visitors : {{ value.direct }}%
 T1669279380                 : Direct {{ value.direct }}%
-T1399895172                 : Depuis des sources inconnues: {{ value.unknown }}%
-T-535832594                 : Inconnu {{ value.unknown }}%
-T-741803981                 : Les références au TOP
-T874396906                  : Nouvelles commandes
-T259257113                  : Pages du rendu
+T1399895172                 : From unknown source : {{ value.unknown }}%
+T-535832594                 : Unknown {{ value.unknown }}%
+T-741803981                 : References to the TOP
+T874396906                  : New orders
+T259257113                  : Preview page
 T77302707                   : Posts
-T698773049                  : Nouveaux abonnés
-T-1300467825                : Nouveaux utilisateurs
-T-2077592999                : Rendu de la Newsletter
-T-1677484195                : Réseaux sociaux
-T1746276813                 : Visiteurs de la pub
-T-1738839860                : Des moteurs de recherches
-T40722742                   : De sources inconnus
-T-882971776                 : En train de lire
-T-1852177981                : En train de parcourir
+T698773049                  : New subscribers
+T-1300467825                : New users
+T-2077592999                : Preview of Newsletter
+T-1677484195                : Social networks
+T1746276813                 : Pub visitors
+T-1738839860                : Search engines
+T40722742                   : From unknown sources
+T-882971776                 : Reading
+T-1852177981                : Browsing
 T-1199693263                : De la pub
 T1959496527                 : Des réseaux sociaux
-T1274445682                 : Visiteur direct
+T1274445682                 : Direct visitor
 T1079187605                 : Referrant
 
 // themes/admin/public/templates/dashboard.html, themes/default/public/widgets/contactform.html
-T-590012277                 : Formulaire de contact
+T-590012277                 : Contact form
 
 // themes/admin/public/templates/newsletters.html
 T2026540316                 : Create
-T-1975056985                : Envoi...
+T-1975056985                : Sending ...
 T3526536                    : send
-T-266215145                 : Etes-vous sûre de vouloir supprimer la newsletter sélectionnée?
-T-1366448213                : Newsletter supprimée avec succès.
-T1215769909                 : Supprimer les newsletters
-T980952047                  : Ete-vous sûre de vouloir supprimer toutes les newsletters sélectionnées?
-T-997698767                 : Newsletters supprimée avec succès!.
-T1031186758                 : Créer une newsletter
+T-266215145                 : Are you sure you want to delete this selected newsletter?
+T-1366448213                : Newsletter is deleted successfully.
+T1215769909                 : Clear Newsletters.
+T980952047                  : Are you sure you want to delete all these selected newsletter?
+T-997698767                 : Newsletter is deleted successfully.
+T1031186758                 : Create a newsletter
 
 // themes/admin/public/templates/newsletters.html, themes/admin/public/templates/notices.html, themes/admin/public/templates/orders.html, themes/admin/public/templates/pages.html, themes/admin/public/templates/posts.html, themes/admin/public/templates/products.html, themes/admin/public/templates/subscribers.html, themes/admin/public/templates/users.html, themes/admin/public/templates/widgets.html
 T415178366                  : Options
-T187620241                  : Rafraichir
+T187620241                  : Refresh
 
 // themes/admin/public/templates/newsletters.html, themes/admin/public/templates/notices.html, themes/admin/public/templates/pages.html, themes/admin/public/templates/posts.html, themes/admin/public/templates/products.html, themes/admin/public/templates/widgets.html
-T-1088875667                : Dupliquer
+T-1088875667                : Duplicate
 
 // themes/admin/public/templates/newsletters.html, themes/admin/public/templates/notices.html, themes/admin/public/templates/orders.html, themes/admin/public/templates/pages.html, themes/admin/public/templates/posts.html, themes/admin/public/templates/products.html, themes/admin/public/templates/settings.html, themes/admin/public/templates/users.html, themes/admin/public/templates/widgets.html
-T-550869257                 : Modifier
+T-550869257                 : Modify
 
 // themes/admin/public/templates/notices.html, themes/admin/public/templates/orders.html, themes/admin/public/templates/pages.html, themes/admin/public/templates/posts.html, themes/admin/public/templates/products.html, themes/admin/public/templates/widgets.html
-T65499239                   : Créer
+T65499239                   : Create
 
 // themes/admin/public/templates/notices.html
-T120058740                  : Epinglé
+T120058740                  : Spinned
 T1987787968                 : aaaa-MM-jj
-T715565503                  : Etes-vous sûre de vouloir supprimer le post sélectionné?
-T807617654                  : Supprimer les notices
-T-419680913                 : Etes-vous sûres de vouloir supprimer les notices sélectionnés?
-T1586960573                 : Notices Suprimmées avec succès.
-T2025884133                 : Créer une notice
+T715565503                  : Are you sure you want to delete the selected post?
+T807617654                  : Delete notices
+T-419680913                 : Are you sure you want to delete the selected notices?
+T1586960573                 : Notices are deleted successfully.
+T2025884133                 : Create a notice
 
 // themes/admin/public/templates/notices.html, themes/admin/public/templates/posts.html, themes/admin/public/templates/products.html, themes/default/views/cms/product.html
 T-725155561                 : Categorie
 
 // themes/admin/public/templates/notices.html, themes/admin/public/templates/posts.html
-T2209                       : De
-T-285993633                 : Post supprimé avec succès.
+T2209                       : From
+T-285993633                 : Post is delete successfully.
 
 // themes/admin/public/templates/orders.html, themes/default/views/eshop/order.html, themes/default/views/mails/contact.html, themes/default/views/mails/order.html
 T2021122027                 : Client
 
 // themes/admin/public/templates/orders.html
-T3433793                    : payé
-T-1312006209                : Ete-vous sûre de vouloir supprimer la commande sélectionnée?
-T2085545314                 : Commande supprimer avec succès!.
-T-371017132                 : Supprimer les commandes
-T267505157                  : Etes-vous sûre de vouloir supprimer les commandes sélectionnées?
-T1606661585                 : Commandes supprimées avec succès!.
-T-933335481                 : Créer une commande
+T3433793                    : Paid
+T-1312006209                : Are you sure you want to delete the selected Order?
+T2085545314                 : Order is deleted successfully!.
+T-371017132                 : Delete the orders.
+T267505157                  : Are you sure you want to delete the selected orders?
+T1606661585                 : Orders are deleted successfully!.
+T-933335481                 : Create a order
 
 // themes/admin/public/templates/orders.html, themes/default/views/mails/order.html
-T-1808614381                : Statut
+T-1808614381                : Status
 
 // themes/admin/public/templates/orders.html, themes/default/views/eshop/order.html, themes/default/views/eshop/settings.html
-T-1850749503                : Remise
+T-1850749503                : Discount
 
 // themes/admin/public/templates/orders.html, themes/admin/public/templates/users.html, themes/default/views/cms/product.html, themes/default/views/eshop/order.html, themes/default/views/mails/contact.html, themes/default/views/mails/order.html
-T1754615576                 : Date_créa
+T1754615576                 : Created_date
 
 // themes/admin/public/templates/pages.html
-T-254972838                 : Variables Globales
+T-254972838                 : Global variables
 T-792934015                 : partial
-T669812634                  : Afficher
-T1269527853                 : Etes-vous sûre de vouloir supprimer la page sélectionnée?
-T-1009475546                : Page supprimée avec succès!.
-T498346591                  : Supprimer les pages
-T1387340826                 : Etes-vous sûre de vouloir supprimer les pages sélectionnées?
-T-1708294746                : Pages supprimées avec succès!.
-T1186510044                 : Créer une page
+T669812634                  : Display
+T1269527853                 : Are you sure you want to delete the selected page?
+T-1009475546                : Page is deleted successfully.
+T498346591                  : Delete the pages.
+T1387340826                 : Are you sure you want to delete the selected pages?
+T-1708294746                : Pages are deleted successfully.
+T1186510044                 : Create a page
 
 // themes/admin/public/templates/pages.html, themes/admin/public/templates/subscribers.html
 T-1850743644                : Remove
@@ -776,130 +775,130 @@ T1921490263                 : Variables
 T-580595674                 : Global style/script
 
 // themes/admin/public/templates/posts.html
-T1182867362                 : non publié
-T-693710100                 : Etes vous sûre de vouloir supprimer le post sélectionné?
-T1003662538                 : Publier / ne pas publier
+T1182867362                 : Not published
+T-693710100                 : Are you sure you want to delete the selected post?
+T1003662538                 : Publish / Unpublish
 T2142005591                 : Remove posts
-T1195010124                 : Etes vous sûre de vouloir supprimer tous les posts sélectionnés?
-T1538354755                 : Posts supprimés avec succès.
-T-1408538866                : Créer un post
+T1195010124                 : Are you sure you want to delete all the selected posts?
+T1538354755                 : Posts are deleted successfully.
+T-1408538866                : Create post
 
 // themes/admin/public/templates/products.html
-T448516141                  : pas publié
-T2130660343                 : nouveau
+T448516141                  : Not published
+T2130660343                 : New
 T115029                     : top
-T1903101687                 : Prix a partir de
-T-735828106                 : rupture de stock
-T-1630927908                : L&#39;importation des produits a démarré. <b>Veuillez patienter...</b>.
-T1728079648                 : Etes vous sûr de vouloir supprimer le produit sélectionné?
-T19411904                   : Le produit a été supprimé avec succès.
-T1669354                    : Publier / Ne pas publier
-T-60376969                  : Supprimer des produits
-T-1496809063                : Etes vous sûr de vouloir supprimer les produits sélectionnés?
-T-1786842712                : Les produits ont été supprimés avec succès!.
-T-277491338                 : Ajouter un product
-T1845278748                 : Remplacer categorie
-T-1998629369                : Remplacer fabricant
-T1716910378                 : Importer depuis JSON
-T-1590672391                : Exporter vers JSON
+T1903101687                 : Price starting from
+T-735828106                 : Out of stock
+T-1630927908                : The importation of the products has started <b> Please wait...</b>.
+T1728079648                 : Are you sure you want to delete the selected product?
+T19411904                   : The product is deleted sussceefully.
+T1669354                    : Publish / Unpublish
+T-60376969                  : Delete some products
+T-1496809063                : Are you sure you want to delete the selected products?
+T-1786842712                : The products are deleted successfully.
+T-277491338                 : Add a product
+T1845278748                 : Replace category
+T-1998629369                : Replace manufacturer
+T1716910378                 : Import from JSON
+T-1590672391                : Export to JSON
 
 // themes/admin/public/templates/settings.html
-T-934746804                 : Paramètre Général
+T-934746804                 : General settings
 T236692261                  : ex: https://eshop.totaljs.com
-T278718052                  : Email pour le formulaire de contact
-T15241398                   : Email pour le formulaire de commande
-T-262439956                 : Email pour le formulaire d&#39;utilisateur
-T1656180111                 : Email pour les réponses
-T173254171                  : Email pour l&#39;envoi
-T393625421                  : Livraison et paiement
-T227342412                  : Un stat par défaut pour les commandes
-T-1984638255                : Monaie
-T-1598562666                : Supporte
-T455655033                  : Saisir une valeur et taper sur Entrer
-T-1513871719                : Types de livraison
-T1519975410                 : Type de  paiement
+T278718052                  : Email for contact form
+T15241398                   : Email for order form
+T-262439956                 : Email for user form
+T1656180111                 : Email for response
+T173254171                  : Email for sending
+T393625421                  : Delivery and payment
+T227342412                  : A default stat for a order
+T-1984638255                : Change
+T-1598562666                : Support
+T455655033                  : Type a value and hit Enter
+T-1513871719                : Delivery type
+T1519975410                 : Payment type
 T-1217415016                : Signature
-T-2070820526                : Activer <b>un mode test pour paypal</b>
+T-2070820526                : Acrivate <b>un test mode for paypal</b>
 T-1984932214                : Models
-T-864859227                 : Un nom de model
-T979863874                  : Saisir le nom d&#39;une vue
-T407091000                  : Models de page
-T1240823458                 : Models de newsletter
-T407104841                  : Models de post
-T-440483821                 : Models de produits
-T-1292801186                : Tous les models doivent être manuellement créés dans le dossier suivant <code>/themes/THEME_NAME/views/cms/</code>.
-T1447411191                 : Un nom d&#39;une navigation
-T-1356698414                : Saisir le nom d&#39;un indicateur et taper sur entrer
-T292058241                  : Navigations déja existantes
-T-1536047247                : Variable Globale: <code>F.global.navigation.IDENTIFICATOR</code>
-T-1011722788                : Un nom de notice
-T-1513566066                : Catégorie notices
-T-916105006                 : Variables Globale: <code>F.global.notices</code>
-T-859092828                 : Un nom de post
-T459911295                  : Catégories de post
-T1346740826                 : Variables Globale: <code>F.global.posts</code>
-T-874500692                 : Un nom de signal
-T-546984706                 : Les signaux enregistrés
-T-2888490                   : Les signaux peuvent affecter un comportement dans les ages ou les produits
-T-557323216                 : Niveau 1 / Niveau 2 / Niveau 3
-T-1263334271                : Catégories prédéfinies de produits
-T-1765856133                : Chaque ligne seta considéré comme une catégarie.
-T-1468623217                : Paramètres SMTP
+T-864859227                 : A model name
+T979863874                  : Type a view name
+T407091000                  : Page models
+T1240823458                 : Newsletters models
+T407104841                  : Post models
+T-440483821                 : Product models
+T-1292801186                : All models must be manually created in the following folder <code>/themes/THEME_NAME/views/cms/</code>.
+T1447411191                 : A name of a navigation
+T-1356698414                : Enter the name of an indicator and hit enter
+T292058241                  : Existing navigations
+T-1536047247                : Global Variable: <code>F.global.navigation.IDENTIFICATOR</code>
+T-1011722788                : A notice name
+T-1513566066                : Notice categories
+T-916105006                 : Global variable: <code>F.global.notices</code>
+T-859092828                 : A post name
+T459911295                  : Post category
+T1346740826                 : Global Variables: <code>F.global.posts</code>
+T-874500692                 : A signal name
+T-546984706                 : Saved signals
+T-2888490                   : Signals can affect behavior in ages or products
+T-557323216                 : Level 1 / Level 2 / Level 3
+T-1263334271                : Predefined categories of products
+T-1765856133                : Each line is considered as a category.
+T-1468623217                : SMTP Settings
 T743734370                  : smtp.yourdomain.com
-T1251263530                 : Serveur SMTP
+T1251263530                 : SMTP server
 T1678459430                 : Adresse ip ou nom de domaine.
-T-1863313736                : Options SMTP
-T-475262202                 : Les options doivent être en format JSON.
-T2031575437                 : Liste de tous les administrateurs enrégistrés:
-T1377586966                 : Ajouter un nouvel administrateur
-T923088588                  : Tous les privilèges
-T986090176                  : ENREGISTRER
-T-1985712284                : Les paramètres ont été enregistrés avec succès!.
-T1972518297                 : Etes vous sûr de vouloir supprimer l&#39;utilistateur <b>"{0}"</b>?
+T-1863313736                : SMTP Options
+T-475262202                 : Options must be in JSON format.
+T2031575437                 : List of all registered administrators:
+T1377586966                 : Add a new admin
+T923088588                  : All priviledges
+T986090176                  : SAVE
+T-1985712284                : The parameters are saevd successfully!.
+T1972518297                 : Are you sure you want to delete the user <b>"{0}"</b>?
 
 // themes/admin/public/templates/subscribers.html, themes/default/views/eshop/settings.html, themes/default/views/eshop/signin.html, themes/default/views/mails/contact.html
-T1328893648                 : Adresse e-mail
+T1328893648                 : E-mail address
 
 // themes/admin/public/templates/subscribers.html
-T-449247863                 : désabonné
-T1982491592                 : Bannir
-T498517109                  : Etes vous sur de vouloir supprimer l&#39;abonné sélectionné?
-T-263745482                 : L&#39;abonné a été supprimé avec succès!.
-T792718740                  : S&#39;abonner/ Se désabonner
-T1069146169                 : Supprimer abonnés
-T-1293989189                : Etes vous sûr de voiloir supprimer les abonnés sélectionnés?
-T-511296518                 : Les abonnés ont été supprimés aves succès!.
-T-649909074                 : Importer les addresses
-T817948036                  : Exporter les addresses to CSV
+T-449247863                 : Unsubscribe
+T1982491592                 : Ban
+T498517109                  : Are you sure you want to delete the selected Unsubscriber?
+T-263745482                 : The subscriber is deleted successfully!.
+T792718740                  : Subscribe / unsubscribe
+T1069146169                 : Delete subscribers
+T-1293989189                : Are you sure you want to delete the selected subscribers?
+T-511296518                 : The selected subscribers are deleted successfully!.
+T-649909074                 : Import  addresses
+T817948036                  : Export addresses to CSV
 
 // themes/admin/public/templates/subscribers.html, themes/default/views/eshop/settings.html
-T1678729334                 : Enregistré
+T1678729334                 : Saved
 
 // themes/admin/public/templates/users.html
-T-515484087                 : Confirmé
-T-209554550                 : en ligne
-T-1386150976                : bloqué
-T-1484379244                : féminin
-T1630176383                 : Etes vous sûr de vouloir supprimer l&#39;utilisateur sélectionné?
-T-993097891                 : L&#39;utilisateur a été supprimer avec succès.
-T-121619057                 : Supprimer utilisateurs
-T-67314561                  : Etes vous sûr de vouloir supprimer les utilisateurs sélectionnés?
-T990776334                  : Les utilisateurs ont été supprimés avec succès!.
+T-515484087                 : Confirmed
+T-209554550                 : Online
+T-1386150976                : Blocked
+T-1484379244                : Femele
+T1630176383                 : Are you sure you want to delete the selected user?
+T-993097891                 : User is deleted successfully.
+T-121619057                 : Delete users
+T-67314561                  : Are you sure you want to delete the selected users?
+T990776334                  : Users are deleted successfully!.
 
 // themes/admin/public/templates/users.html, themes/default/views/eshop/account.html
-T-1728844731                : Rémise
+T-1728844731                : Discount
 
 // themes/admin/public/templates/widgets.html
-T740330897                  : Importer un widget déja existant
+T740330897                  : Import existing widgets
 T1785727248                 : Globals
 T115155230                  : Category
-T922259563                  : Etes vous sûr de vouloir supprimer le widget sélectionné?
-T-1137411342                : Le widget a été supprimé avec succès!.
-T-496745166                 : Créer un widget
-T-1903992642                : Importer existant
+T922259563                  : Are you sure you want to delete the selected widget?
+T-1137411342                : Widget is deleted successfully!.
+T-496745166                 : Create widget
+T-1903992642                : Import existing
 T-1385395405                : Remove widgets
-T-1862226594                : Etes vous sûr de vouloir supprimer les widgets sélectionnés?
-T-1943343878                : Les widgets ont été supprimés avec succès.
+T-1862226594                : Are you sure you want to delete the selected widgets?
+T-1943343878                : Widgets are deleted successfully.
 
 // themes/default/public/widgets/contactform.html, themes/default/views/eshop/checkout.html
 T-426113651                 : ex:+22652133010
@@ -1003,7 +1002,7 @@ T-258914214                 : Contact informations
 T-941114487                 : ex:22656920671
 T-413126816                 : I accept terms and conditions
 T159580580                  : Signup
-T-2064401361                : Nous vous avons envoyé un email contenant les intructions de réinitialisation de votre mot de passe.
+T-2064401361                : We have sent you an email with instructions for resetting your password.
 
 // themes/default/views/mails/contact.html
 T2065338374                 : Cher administrateur
