@@ -60,9 +60,7 @@ NEWSCHEMA('User').make(function(schema) {
 				delete ONLINE[model.id];
 			else if (ONLINE[model.id]) // Modifies session
 				exports.session(model);
-
 			$.success();
-
 			if (count) {
 				EMIT('users.save', model);
 				ADMIN.notify({ type: 'users.save', message: model.firstname + ' ' + model.lastname });

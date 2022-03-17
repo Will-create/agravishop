@@ -40,7 +40,14 @@
 		</nav>
 		<div class="title"></div>
 		<div class="user hidden-xs">
-			<i class="fa fa-circle"></i><span data-b="user.name" data-b-html="value"></span>
+			<i style="color:#fff!important;" class="fa fa-circle"></i><span data-b="user.name" data-b-html="value"></span>
+					@{if cookie('_lang') == 'fr'}
+					<a style="color:#fff;margin:5px;" href="/admin/language/en"><i style="color:#fff!important;" class="fa fa-language"></i>English</a>
+
+					@{else}
+					<a style="color:#fff;margin:5px;" href="/admin/language/fr"><i style="color:#fff!important;" class="fa fa-language"></i>French</a>
+
+					@{fi}
 		</div>
 		<div class="header-message">
 			<i class="fa fa-bell"></i>

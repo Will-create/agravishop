@@ -155,3 +155,6 @@ function refresh_prices() {
 		}, 1000);
 	});
 }
+
+	$('.product_name_en').addClass('hidden');
+		$('.product_name').addClass('hidden');

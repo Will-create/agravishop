@@ -39,6 +39,7 @@
 		<div class="row">
 			<div class="col-md-6 m">
 				<div data-jc="textbox" data-jc-path="products.form.name" data-jc-config="placeholder:@(Accueil);required:true">@(Nom)</div>
+				<div data-jc="textbox" data-jc-path="products.form.name_en" data-jc-config="placeholder:@(Accueil);required:true">@(Nom Anglais)</div>
 				<div class="mt10">
 					<div data-jc="checkbox" data-jc-path="products.form.ispublished" class="inline mr10">@(publié)</div>
 					<div data-jc="checkbox" data-jc-path="products.form.istop" class="inline mr10">@(au <b>TOP</b>)</div>
@@ -75,8 +76,11 @@
 	<hr class="nmt" />
 	<div class="padding">
 		<div class="row">
-			<div class="col-md-6 m">
+			<div class="col-md-3 m">
 				<div data-jc="textarea" data-jc-path="products.form.description" data-jc-config="height:86;required:true">@(Description Simple)</div>
+			</div>
+			<div class="col-md-3 m">
+				<div data-jc="textarea" data-jc-path="products.form.description_en" data-jc-config="height:86;required:true">@(Description Anglais)</div>
 			</div>
 			<div class="col-md-3 m">
 				<div data-jc="textboxtags" data-jc-path="products.form.size" data-jc-config="height:92;uppercase:true">@(Tailles)</div>

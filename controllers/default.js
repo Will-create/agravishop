@@ -4,8 +4,10 @@ exports.install = function() {
    			ROUTE('/*', view_cms);
     });
 
-	ROUTE('/language/fr/',set_french)
-	ROUTE('/language/en/',set_english)
+	ROUTE('/language/fr/',set_french);
+	ROUTE('/admin/language/fr/',set_admin_french);
+	ROUTE('/language/en/',set_english);
+	ROUTE('/admin/language/en/',set_admin_english);
 
 	// Posts
 	ROUTE('#posts', view_posts, ['*Post']);
@@ -25,7 +27,12 @@ function set_french(){
 	self.res.cookie('_lang','fr','5 days');
 	this.redirect('/');
 }
-
+function set_admin_french(){
+	var self = this;
+	console.log('Set language to french');
+	self.res.cookie('_lang','fr','5 days');
+	this.redirect('/admin');
+}
 // this controller sets the user language to english
 function set_english(){
 	var self = this;
@@ -34,7 +41,12 @@ function set_english(){
 	this.redirect('/');
 
 }
-
+function set_admin_english(){
+	var self = this;
+	console.log('set the user language to english');
+	self.cookie('_lang','en','5 days');
+	this.redirect('/admin');
+}
 function view_posts() {
 	var self = this;
 	var options = {};
@@ -43,13 +55,10 @@ function view_posts() {
 	options.published = true;
 	options.limit = 10;
 	// options.category = 'category_linker';
-
 	self.sitemap();
 	self.$query(options, self.callback('posts'));
 }
-
 function view_posts_detail(linker) {
-
 	var self = this;
 	var options = {};
 

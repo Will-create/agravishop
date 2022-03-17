@@ -31,124 +31,7 @@
 				padding-bottom: 3px;
 				border: 1px solid #DDD;
 				}
-* {
-    box-sizing: border-box;
-}
 
-a {
-    text-decoration: none;
-}
-
-.header {
-
-    background-color: #f2f2f2;
-    height: 60px;
-    padding: 10px 0;
-
-}
-
-.nav {
-    width: 960px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-}
-
-.logotop {
-    width: 60px;
-}
-
-.logotop img {
-    width: 60px;
-
-}
-
-.lang-menu {
-    width: 100px;
-    text-align: right;
-    font-weight: bold;
-    margin-top: 25px;
-    position: relative;
-	z-index : 999999999;
-}
-.lang-menu .selected-lang {
-    display: flex;
-    justify-content: space-between;
-    line-height: 2;
-    cursor: pointer;
-}
-.lang-menu .selected-lang:before {
-    content: '';
-    display: inline-block;
-    width: 32px;
-    height: 32px;
-    background-image: url(https://www.countryflags.io/us/flat/32.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.lang-menu ul {
-    margin: 0;
-    padding: 0;
-    display: none;
-    background-color: #fff;
-    border: 1px solid #f8f8f8;
-    top: 25px;
-    right: 0px;
-    width: 125px;
-    border-radius: 5px;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
-}
-
-
-.lang-menu ul li {
-    list-style: none;
-    text-align: left;
-    display: flex;
-    justify-content: space-between;
-}
-
-.lang-menu ul li a {
-    text-decoration: none;
-    width: 125px;
-    padding: 5px 10px;
-    display: block;
-}
-
-.lang-menu ul li:hover {
-    background-color: #f2f2f2;
-}
-
-.lang-menu ul li a:before {
-    content: '';
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    vertical-align: middle;
-    margin-right: 10px;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.de:before {
-    background-image: url(https://www.countryflags.io/de/flat/32.png);
-}
-
-.en:before {
-    background-image: url(https://www.countryflags.io/us/flat/32.png);
-}
-.fr:before {
-    background-image: url(https://www.countryflags.io/fr/flat/32.png);
-}
-
-.ar:before {
-    background-image: url(https://www.countryflags.io/ae/flat/32.png);
-}
-
-
-.lang-menu:hover ul {
-    display: block;
-}
 	</style>
 	<br />
 	<div data-jc="loading" class="ui-loading@{if !repository.loading} hidden@{fi}"></div>
@@ -156,21 +39,24 @@ a {
 	<div data-jc="message" data-jc-config="button:@{if !PREF.language  == 'fr'} Close @{else} @(Fermer) @{fi} "></div>
 	<div data-jc="autocomplete"></div>
 	<div class="container">
-
 		<div class="relative">
 			<div class="account">
-
 				@{if user}
 					<a style="color:#056005" href="@{sitemap_url('account')}" class="b">@{user.name}</a>
 					<a style="color:#056005" href="@{sitemap_url('settings')}"><i class="fa fa-cog"></i>@(Paramètres)</a>
 					<a style="color:#056005" href="@{sitemap_url('logoff')}"><i class="fa fa-sign-out"></i>@(Déconnexion)</a>
 				@{else}
 					<a style="color:#056005" href="@{sitemap_url('account')}"><i class="fa fa-lock"></i>@(Connexion)</a>
+					@{if cookie('_lang') == 'fr'}
+					<a style="color:#056005;margin:5px;" href="/language/en"><i class="fa fa-language"></i>English</a>
 
+					@{else}
+					<a style="color:#056005;margin:5px;" href="/language/fr"><i class="fa fa-language"></i>French</a>
+
+					@{fi}
+				@{user}
 				@{fi}
-
 			</div>
-
 		</div>
 		<div class="row">
 			<div class="col-md-3">
@@ -202,7 +88,6 @@ a {
 			</div>
 			<div class="col-md-9">
 				<section class="body">
-
 					<header>
 						<nav style="background-color: #056005!important;height:1px!important;" class="customNav2" >
 
@@ -219,7 +104,6 @@ a {
 							<button><i class="fa fa-search"></i></button>
 							<div><input type="text" placeholder="@(Rechercher...)" name="q" value="@{query.q}" id="search" autocomplete="off" /></div>
 						</form>
-
 					</header>
 					<nav class="breadcrumb mt2">
 						@{foreach m in sitemap()}
@@ -238,6 +122,10 @@ a {
 	<br />
 	<br />
 	<script src="@{global.js}"></script>
+	<script>
+
+
+	</script>
 </body>
 </html>
 

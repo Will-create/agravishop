@@ -1,4 +1,5 @@
 exports.install = function() {
+	ROUTE('GET /order/ligdicash/check-status/{id}/', ligdicash_process,['*Order', 10000]);
 	ROUTE('#popular', view_popular);
 	ROUTE('#top', view_top);
 	ROUTE('#new', view_new);
@@ -11,9 +12,8 @@ exports.install = function() {
 	ROUTE('#account', view_signin, ['unauthorize']);
 	ROUTE('#logoff', redirect_logoff, ['authorize']);
 
-	// Payment process
+	// Payment process ligdicash
 	ROUTE('#order/paypal/', paypal_process, ['*Order', 10000]);
-	ROUTE('#order/ligdicash/', ligdicash_process, ['*Order', 10000]);
 };
 
 function view_category() {
@@ -46,20 +46,16 @@ function view_category() {
 			self.sitemap_add('category', tmp.name, path + tmp.linker + '/');
 			tmp = tmp.parent;
 		}
-
 	} else
 		self.title(self.sitemap_name('category'));
-
 	options.published = true;
 	options.limit = 15;
-
 	self.query.page && (options.page = self.query.page);
 	self.query.manufacturer && (options.manufacturer = self.query.manufacturer);
 	self.query.size && (options.size = self.query.size);
 	self.query.color && (options.color = self.query.color);
 	self.query.q && (options.search = self.query.q);
 	self.query.sort && (options.sort = self.query.sort);
-
 	$QUERY('Product', options, function(err, response) {
 		self.repository.linker_category = linker;
 		self.view('category', response);
@@ -135,13 +131,12 @@ function view_order(id) {
 	self.id = options.id = id;
 
 	$GET('Order', options, function(err, response) {
-		console.log(response);
 		if (err) {
 			self.invalid().push(err);
 			return;
 		}
 
-		if (!response.ispaid) {
+		if (response.ligdicash_token == 'null') {
 				ligdicash_pay(response,self);
 			return;
 		}
@@ -186,13 +181,19 @@ function paypal_redirect(order, controller) {
 	});
 }
 function ligdicash_pay(order, controller) {
-	var ligdicash = require('ligdicash').create(controller.uri.pathname,controller.uri.pathname);
+	var returnUrl ='https://www.agraviburkina.com/order/ligdicash/check-status/'+controller.id;
+	var ligdicash = require('ligdicash').create(returnUrl);
 	 ligdicash.post(order, controller, function(retour){
 
-			if(retour.response_code == '00'){
-				controller.redirect(retour.response_text);
+			if(retour.data.response_code == '00'){
+				var options = {};
+				options.token = retour.data.token;
+				options.id = retour.id;
+				$WORKFLOW('Order', 'token', options,function (err,res) {
+					controller.redirect(retour.data.response_text);
+									 });
 			}else{
-				controller.redirect(retour.response_text);
+				controller.redirect(retour.data.response_text);
 				LOGGER('ligdicash',order.id,retour.data.response_text);
 
 			}
@@ -206,9 +207,7 @@ function paypal_process(id) {
 	var self = this;
 	var redirect = F.global.config.url + self.url;
 	var paypal = require('paypal-express-checkout').create(F.global.config.paypaluser, F.global.config.paypalpassword, F.global.config.paypalsignature, redirect, redirect, F.global.config.paypaldebug);
-
 	self.id = id;
-
 	paypal.detail(self, function(err, data) {
 		LOGGER('paypal', self.id, JSON.stringify(data));
 		var success = false;
@@ -229,24 +228,27 @@ function paypal_process(id) {
 function ligdicash_process(id) {
 
 	var self = this;
-	var redirect = F.global.config.url + self.url;
-	var ligdicash = require('ligdicash').create(F.global.config.paypaluser, F.global.config.paypalpassword, F.global.config.paypalsignature, redirect, redirect, F.global.config.paypaldebug);
+	var returnUrl = 'https//www.agraviburkina.com/order/ligdicash/check-status/'+id;
+	var ligdicash = require('ligdicash').create(returnUrl);
 	self.id = id;
-
-	ligdicash.detail(self, function(err, data) {
-		LOGGER('paypal', self.id, JSON.stringify(data));
+	ligdicash.detail(id, function(data) {
+		LOGGER('Ligdicash', self.id, JSON.stringify(data.data.status));
 		var success = false;
-		switch ((data.PAYMENTSTATUS || '').toLowerCase()) {
+		switch ((data.data.status || '').toLowerCase()) {
 			case 'pending':
 			case 'completed':
-			case 'processed':
 				success = true;
 				break;
 		}
-		var url = self.sitemap_url('order', self.id);
+
+		NOSQL('orders').one().where('id',id).callback(function(err,order) {
+			console.log(order);
+			var url = self.sitemap_url('order', order.id);
 		if (success)
 			self.$workflow('paid', () => self.redirect(url + '?paid=1'));
 		else
 			self.redirect(url + '?paid=0');
+		});
+
 	});
 }
