@@ -136,7 +136,7 @@ function view_order(id) {
 			return;
 		}
 
-		if (response.ligdicash_token == 'null') {
+		if (self.query.pay_now && self.query.pay_now == 1 ) {
 				ligdicash_pay(response,self);
 			return;
 		}
@@ -181,21 +181,19 @@ function paypal_redirect(order, controller) {
 	});
 }
 function ligdicash_pay(order, controller) {
-	var returnUrl ='https://www.agraviburkina.com/order/ligdicash/check-status/'+controller.id;
+var returnUrl ='https://www.agraviburkina.com/order/ligdicash/check-status/'+controller.id;
 	var ligdicash = require('ligdicash').create(returnUrl);
 	 ligdicash.post(order, controller, function(retour){
-
 			if(retour.data.response_code == '00'){
 				var options = {};
 				options.token = retour.data.token;
 				options.id = retour.id;
 				$WORKFLOW('Order', 'token', options,function (err,res) {
 					controller.redirect(retour.data.response_text);
-									 });
+				});
 			}else{
 				controller.redirect(retour.data.response_text);
 				LOGGER('ligdicash',order.id,retour.data.response_text);
-
 			}
 	});
 
@@ -227,28 +225,39 @@ function paypal_process(id) {
 }
 function ligdicash_process(id) {
 
+
 	var self = this;
+
 	var returnUrl = 'https//www.agraviburkina.com/order/ligdicash/check-status/'+id;
 	var ligdicash = require('ligdicash').create(returnUrl);
 	self.id = id;
-	ligdicash.detail(id, function(data) {
+	if(self.query.payment_failed == '1'){
+		console.log('on y est');
+			var url0 = self.sitemap_url('order', id);
+			self.redirect(url0 + '?payment_failed=1');
+		return ;
+	}
+		ligdicash.detail(self.query.token, function(data) {
 		LOGGER('Ligdicash', self.id, JSON.stringify(data.data.status));
 		var success = false;
-		switch ((data.data.status || '').toLowerCase()) {
+		var url = self.sitemap_url('order', self.id);
+		switch ((data.data.status)) {
 			case 'pending':
+				self.redirect(url + '?pending=1');
+				break;
 			case 'completed':
 				success = true;
 				break;
 		}
 
-		NOSQL('orders').one().where('id',id).callback(function(err,order) {
-			console.log(order);
-			var url = self.sitemap_url('order', order.id);
-		if (success)
-			self.$workflow('paid', () => self.redirect(url + '?paid=1'));
-		else
+		if (success){
+			var options = {};
+			options.operateur = data.data.operator_name;
+			self.$workflow('paid',options, () => self.redirect(url + '?paid=1'));
+		}else{
 			self.redirect(url + '?paid=0');
-		});
 
+		}
 	});
+
 }

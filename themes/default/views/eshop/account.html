@@ -61,7 +61,7 @@
 				<script type="text/html">
 					{{ foreach m in value }}
 						<div class="order">
-							<a href="@{sitemap_url('ligdicash', '{{ m.id }}')}" title="@(Voir rendu)"><i class="fa fa-search"></i></a>
+						<a href="@{sitemap_url('order', '{{ m.id }}')}" title="@(Voir rendu)"><i class="fa fa-search"></i></a>
 							<div class="line">
 								<div class="price">{{ m.price | format(2) }}</div>
 								<div class="name">{{ m.name }}</div>

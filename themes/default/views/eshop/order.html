@@ -9,7 +9,45 @@
 				<i class="fa fa-warning"></i>@(Nous n&#39;avons pas recu de paiement. <b>Essayer à nouveau le paiement</b>.)
 			</div>
 			@{fi}
-
+			@{if query.pending === '1'}
+			<div class="contentwarning">
+				@{if cookie('_lang') == 'en'}
+			<div class="contentwarning">
+				<i class="fa fa-warning"></i>Unknown  : Your payment did not complete, Please try again;
+			</div>
+			@{else}
+				<div class="contentwarning">
+				<i class="fa fa-warning"></i>Erreur : Votre paiement n'a pas abouti, veuillez reessayer .
+				</div>
+			@{fi}
+			</div>
+			@{fi}
+				@{if query.payment_failed === '1'}
+			<div class="contentwarning">
+				@{if cookie('_lang') == 'en'}
+			<div class="contentwarning">
+				<i class="fa fa-warning"></i>Unknown : Your payment has failed, try again
+			</div>
+			@{else}
+				<div class="contentwarning">
+				<i class="fa fa-warning"></i>Erreur : Votre paiement a echoue, veuillez reessayer.
+				</div>
+			@{fi}
+			</div>
+			@{fi}
+			@{if query.payment_cancelled === '1'}
+			<div class="contentwarning">
+				@{if cookie('_lang') == 'en'}
+			<div class="contentwarning">
+				<i class="fa fa-warning"></i>Unknown : Your payment has been cancelled, You can retry anytime
+			</div>
+			@{else}
+				<div class="contentwarning">
+				<i class="fa fa-warning"></i>Erreur : Votre paiement a annule, vous pouvez reessayer a tout moment.
+				</div>
+			@{fi}
+			</div>
+			@{fi}
 			@{if query.paid === '1'}
 			<div class="contentsuccess">
 				<i class="fa fa-check-circle"></i>@(<b>Merci beaucoup</b>, votre commande a été payé.)
@@ -206,8 +244,7 @@
 	}
 	function paymentsubmit(){
 		SETTER('loading', 'show');
-		location.href = location.pathname + '?numero=' + payment.form.numero + '&payment='+ payment.form.payment;
-		console.log(payment);
+		location.href = location.pathname + '?pay_now=1';
 	}
 
 	// Highlight sizes and colors

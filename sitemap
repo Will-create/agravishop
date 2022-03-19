@@ -16,6 +16,6 @@ new               : @(Nouveau produits)        --> @(/nouveau/)                 
 popular           : @(Produits populaires)    --> @(/populaire/)             --> homepage
 account           : @(Mon Compte)          --> @(/Compte/)             --> homepage
 order             : @(Details commandes)        --> @(/soumission-de-la-commande/{0}/)        --> account
-ligdicash             : @(Status depaiment)        --> @(/order/ligdicash/check-status/{0}/)        --> account
+ligdicash         : @(Status de paiment)        --> @(/order/ligdicash/check-status/{0}/)        --> account
 settings          : @(Parametres de compte)    --> @(/compte/parametres/)    --> account
 logoff            : @(Deconnexion)              --> @(/deconnexion/)              --> homepage

@@ -46,7 +46,7 @@ NEWSCHEMA('Order').make(function(schema) {
 	schema.define('company', 'String(40)');
 	schema.define('companyid', 'String(15)');
 	schema.define('companyvat', 'String(50)');
-	schema.define('ligdicash_token', 'String(100)');
+	schema.define('ligdicashtoken', 'String(100)');
 	schema.define('billingstreet', 'String(50)');
 	schema.define('billingzip', 'String(20)');
 	schema.define('billingcity', 'String(50)');
@@ -72,7 +72,7 @@ NEWSCHEMA('Order').make(function(schema) {
 		switch (name) {
 			case 'status':
 				return F.global.config.defaultorderstatus;
-			case 'ligdicash_token':
+			case 'ligdicashtoken':
 				return 'null';
 		}
 	});
@@ -409,10 +409,10 @@ NEWSCHEMA('Order').make(function(schema) {
 	schema.addWorkflow('paid', function($) {
 		console.log('provided id');
 		console.log($.id);
-		NOSQL('orders').modify({ ispaid: true, datepaid: F.datetime }).where('ispaid', false).where('ligdicash_token', $.id || $.options.id).callback((err, count) => $.success(count > 0));
+		NOSQL('orders').modify({ ispaid: true, datepaid: F.datetime,payment : $.options.operateur }).where('ispaid', false).where('id', $.id).callback((err, count) => $.success(count > 0));
 	});
 	schema.addWorkflow('token', function($) {
-		NOSQL('orders').modify({ ligdicash_token : $.options.token }).where('ispaid', false).where('id', $.options.id).callback((err, count) => $.success(count > 0));
+		NOSQL('orders').modify({ ligdicashtoken : $.options.token }).where('ispaid', false).where('id', $.options.id).callback((err, count) => $.success(count > 0));
 	});
 });
 
