@@ -1,5 +1,7 @@
 exports.install = function() {
 	ROUTE('GET /order/ligdicash/check-status/{id}/', ligdicash_process,['*Order', 10000]);
+	ROUTE('GET /order/ligdicash/status-cancelled/{id}/', ligdicash_cancelled,['*Order', 10000]);
+	ROUTE('GET /order/ligdicash/check-callback/{id}/', ligdicash_callback,['*Order', 10000]);
 	ROUTE('#popular', view_popular);
 	ROUTE('#top', view_top);
 	ROUTE('#new', view_new);
@@ -182,7 +184,9 @@ function paypal_redirect(order, controller) {
 }
 function ligdicash_pay(order, controller) {
 var returnUrl ='https://www.agraviburkina.com/order/ligdicash/check-status/'+controller.id;
-	var ligdicash = require('ligdicash').create(returnUrl);
+		var cancelUrl = 'https//www.agraviburkina.com/order/ligdicash/status-cancelled/'+controller.id;
+	var callbackUrl = 'https//www.agraviburkina.com/order/ligdicash/status-callback/'+controller.id;
+	var ligdicash = require('ligdicash').create(returnUrl,cancelUrl,callbackUrl);
 	 ligdicash.post(order, controller, function(retour){
 			if(retour.data.response_code == '00'){
 				var options = {};
@@ -229,7 +233,9 @@ function ligdicash_process(id) {
 	var self = this;
 
 	var returnUrl = 'https//www.agraviburkina.com/order/ligdicash/check-status/'+id;
-	var ligdicash = require('ligdicash').create(returnUrl);
+	var cancelUrl = 'https//www.agraviburkina.com/order/ligdicash/status-cancelled/'+id;
+	var callbackUrl = 'https//www.agraviburkina.com/order/ligdicash/status-callback/'+id;
+	var ligdicash = require('ligdicash').create(returnUrl,cancelUrl,callbackUrl);
 	self.id = id;
 	if(self.query.payment_failed == '1'){
 		console.log('on y est');
@@ -260,4 +266,16 @@ function ligdicash_process(id) {
 		}
 	});
 
+}
+function ligdicash_cancelled(id) {
+	var self = this;
+	var url = self.sitemap_url('order', self.id);
+	self.redirect(url + '?payment_failed=1');
+		LOGGER('Ligdicash', self.id, 'Cancelled');
+}
+function ligdicash_callback(id) {
+	var self = this;
+	var url = self.sitemap_url('order', self.id);
+	self.redirect(url + '?payment_cancelled=1');
+		LOGGER('Ligdicash', self.id, 'Callback');
 }
